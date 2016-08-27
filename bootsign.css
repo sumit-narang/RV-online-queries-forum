@@ -1,6 +1,6 @@
-body{
+/*body{
 	background-color: rgba(0,0,0,0.7);
-}
+}*/
 /*gradient background */
 .gradient{
 	position: relative;
@@ -23,37 +23,39 @@ body{
     z-index: 100;
     background-color: white;
 }
-.signup-text{
-	color: white;
-	text-align: center;
-}
+
+/*starting form*/
 form{
 	padding-top: 70px;
 }
-
+/*Each input type inside form*/
 .form-control{
 	outline: none;
 	background-color: rgba(255,255,255,0.1);
 	box-shadow: none;
-	/*height: 40px;*/
 	border-radius: 3px;
-}
-.btn-custom{
-	width: 100%;
-	background-color: rgba(255,255,255,0.8);
-}
-input:placeholder-shown {
-  color:white;
-}
-input:focus{
-	color:white;
+	color: white;
 }
 .form-control:focus{
 	outline: none;
 	border: 1px solid white;
 }
 
-/*placeholder color*/
+/*submit button*/
+.btn-custom{
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+}
+/**/
+input:placeholder-shown {
+  color:white;
+}
+/**/
+input:focus{
+	color:white;
+}
+
+/*placeholder color in input type*/
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba(255,255,255,0.5);
 }
@@ -67,46 +69,49 @@ input:focus{
   color: rgba(255,255,255,0.5);
 }
 
-/*upload id card*/
+/*upload id card content*/
 .help-block{
-	color: rgba(255,255,255,0.7);
+	color: rgba(255,255,255,0.5);
 	text-align: right;
+	position: relative;
+	top: -12px;
 }
 
+/*select option in dropdown*/
 .select-option{
 	color: white;
 }
-.form-option{
-	color: white;
+.select-option option{
+	color: black;
+	background-color: white;
 }
-.file-control{
-	color: white;
-	border-style: solid;
-	box-shadow: none;
-	-ms-box-shadow: inset 0 -2px #2f2e2e;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	 -webkit-appearance: none;
-	  -ms-appearance: none;
-	  background-clip: padding-box;
+.select-option option:hover{
+	background: rgba(0,0,0,0.3);
+}
+.option-header{
+	color: rgba(255,255,255,0.5);
 }
 
-
-
-
-
-
-.terms-footer{
-	text-align: center;
-	margin-top: 6vh;
-	margin-bottom: 6vh;
-	color: rgba(255,255,255,0.7);
-	font-size: 13px;
+/*container containing input[type="file"] */
+.form-custom-file{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 6px 12px;
+	background-color: rgba(255,255,255,0.1);
 }
-.terms-footer a{
-	color:white;
-	font-size: 13px;
+
+/*custom input[type="file"]*/
+.form-control-custom{
+	outline: none;
+	width: 100%;
+	color: rgba(255,255,255,0.8);
+	line-height: normal;
 }
+input[type="file"]:focus{
+	outline: none;
+}
+
+/*terms and condition and Login*/
 .login-footer{
 	text-align: center;
 	margin-bottom: 0;
@@ -117,10 +122,4 @@ input:focus{
 .login-footer a{
 	color:white;
 	font-size: 14px;
-}
-/*Internet Explorer*/
-.file-control::-ms-browse{
-	outline: none;
-	border: none;
-	vertical-align: baseline;
 }
