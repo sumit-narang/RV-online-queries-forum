@@ -7,14 +7,199 @@
 	<title>Community Signup</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../bootsign.css">
+	<link rel="stylesheet" type="text/css" href="head.css">
+	<script type="text/javascript" src="head.js"></script>
+	<style>
+	.navbar-default{
+	  	background-color: #f9f9f9 !important;
+	}
+    .content{
+		margin-top: 70px;
+	}
+    .nav-items{
+    	border: 1px solid transparent;
+    }
+    .nav-items:hover{
+    	border: 1px solid #0782f6;
+    	background-color: #0782f6 !important;
+    	color: white !important;
+    	border-radius: 4px; 
+    }
+    .active{
+    	border: 1px solid #0782f6;
+    	background-color: #0782f6;
+    	color: white !important;
+    	border-radius: 4px;
+    }
+    .active:hover{
+    	background-color: white !important;
+    	color: #0782f6 !important;
+    }
+    .unstyle{
+    	font-size: 20px;
+    }
+    @media (min-width: 1200px) {
+    	.nav-items{
+    	padding-top: 2px !important;
+    	padding-bottom: 2px !important;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	margin-top: 12px;
+        margin-bottom:12px;
+        margin-left: 5px;
+        }
+        .hidden-gteq-768{
+    		display: none !important;
+    	}
+    	.unstyle{
+    		padding-left: 0 !important;
+    	}
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+    	.nav-items{
+    	padding-top: 2px !important;
+    	padding-bottom: 2px !important;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	margin-top: 12px;
+        margin-bottom:12px;
+        margin-left: 5px;
+    	}
+    	.hidden-gteq-768{
+    		display: none !important;
+    	}
+    	.unstyle{
+    		padding-left: 0 !important;
+    	}
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+    	.nav-items{
+    	padding-top: 2px !important;
+    	padding-bottom: 2px !important;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	margin-top: 12px;
+        margin-bottom:12px;
+        margin-left: 5px;
+    	}
+    	.hidden-gteq-768{
+    		display: none !important;
+    	}
+    	.unstyle{
+    		padding-left: 0 !important;
+    	}
+    }
+    @media (min-width: 480px) and (max-width: 768px) {
+    	.nav-items{
+    	padding-top: 2px !important;
+    	padding-bottom: 2px !important;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	margin-top: 12px;
+        margin-bottom:12px;
+        margin-left: 5px;
+    	}
+    	.no-collapse{
+    		display: inline-block !important;
+    	}
+    	.hidden-lt-768{
+    		display:none !important;
+    	}
+    	.active{
+    		margin-right: 15px;
+    	}
+    	.unstyle{
+    		padding-top: 2px !important;
+    		border: 1px solid transparent;
+    		border-left: none;
+    		padding-bottom: 2px !important;
+    		padding-right: 10px;
+    		margin-top: 12px;
+        	margin-bottom:12px;
+    	}
+    	.navbar-nav{
+    		margin-top: 0;
+    		margin-bottom: 0;
+    	}
+
+    }
+    @media (min-width: 480px) and (max-width: 768px) {
+    	.hidden-lt-650{
+    		display: none !important;
+    	}
+    }
+    @media (max-width: 480px) {
+    	.nav-items{
+    	padding-top: 2px !important;
+    	padding-bottom: 2px !important;
+    	padding-left: 4px !important;
+    	padding-right: 4px !important;
+    	margin-top: 12px;
+        margin-bottom:12px;
+        margin-left: 5px;
+    	}
+    	.no-collapse{
+    		display: inline-block !important;
+    	}
+    	.hidden-lt-650{
+    		display:none !important;
+    	}
+    	.container-heading{
+    		padding-left: 5px;
+    		padding-right: 0;
+    	}
+    	.pull-right{
+    		margin-right:5px; 
+    	}
+    	.navbar-nav{
+    		margin-top: 0;
+    		margin-bottom: 0;
+    	}
+    	.unstyle{
+    		padding-top: 2px !important;
+    		border: 1px solid transparent;
+    		border-left: none;
+    		border-right: none;
+    		padding-bottom: 2px !important;
+    		padding-right: 10px;
+    		margin-top: 12px;
+        	margin-bottom:12px;
+    	}
+    }
+  </style>
+	 
 	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-    	<div class="container">
-    	...
-    	</div>
-    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container-fluid container-heading">
+		    <ul class="nav navbar-nav pull-left">
+		    	<li class="no-collapse"><a href="#" class="unstyle"><b>Q</b>ue<b>a</b>ns</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav pull-right">
+		    	<li class="no-collapse hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Post Question</a></li>
+		    	<li class="no-collapse hidden-gteq-768"><a href="#" class="nav-items">Post</a></li>
+		    	<li class="no-collapse "><a href="#" class="nav-items">Unanswered</a></li>
+		    	<li class="no-collapse hidden-lt-650"><a href="#" class="nav-items">Popular</a></li> 
+		    	<li class="no-collapse hidden-lt-650"><a href="#" class="nav-items">Sign Up</a></li>
+        		<li class="no-collapse "><a href="#" class="active nav-items">Login</a></li>
+		    </ul>
+	    </div>
+	</nav>
+
+	
+
+
+	<div class="container-fluid content" style="height:1000px">
+    Soon after her move to Hollywood, she was cast as Kim Bauer, daughter of federal agent Jack Bauer, in the television series 24. She appeared in the show's first three seasons, but not in its fourth; she guest-starred in two episodes in the fifth season. She also reprised her role as Kim Bauer in 24: The Game and again guest-starred in five episodes of the seventh season and in two episodes of the eighth season.
+
+	She began her Hollywood film career with small roles in Old School, which grossed $87 million, her next film, Love Actually, earned $246.4 million worldwide.[9]
+
+	Her first break in a major film role was in 2004, The Girl Next Door. She played an ex–porn star, Danielle, opposite Emile Hirsch. She had reservations about the part, but was persuaded by director Luke Greenfield. She researched the role, speaking to adult actresses from Wicked Pictures and Vivid Entertainment.[10] The film was compared to Risky Business,[11][12] although Cuthbert said her character was not directly based on Rebecca De Mornay's. Critics were divided; some praised the film for boldness, others, notably Roger Ebert, called it gimmicky and exploitative.[13][14] Ebert wrote that he saw Cuthbert's character as "quite the most unpleasant character I have seen in some time."[15] The View London said: Cuthbert is surprisingly good, too – aside from being Drop Dead Gorgeous, she also proves herself a capable comic actress in the Cameron Diaz mould. (Though, sadly, for those of you who like to know these things, her kit remains resolutely on throughout).[16] Cuthbert won two nominations for the MTV Movie Awards:Best Kiss and Best Breakthrough Performance.
+
+	In her next film, Cuthbert starred with Paris Hilton and Chad Michael Murray in the 2005 remake of the horror film House of Wax. In one scene, her character attempted to open her mouth while her lips were sealed with glue. For realism, she used Superglue over prosthetics.[17] House of Wax was largely panned, critics citing a range of flaws. It was called "notable for having some of the most moronic protagonists ever to populate a horror film," though of those characters, critics tended to think Cuthbert "fares the best." Though it received negative reviews the film was a box office success, which grossed $70 million worldwide.[18] The Houston Chronicle cited Cuthbert as an exception.[19] Mick LaSalle of the San Francisco Chronicle said of the film, "Elisha Cuthbert's matter-of-fact, likable quality helps. Seeing her turn into wax would be as bad as seeing that happen to Glenda Farrell (the star of the 1933 version)."[20] The Movie said: "The performances are always professional and understated in their believable cogency, particularly Cuthbert, a talented, beautiful young actress who has proven time and again just what a multilayered and promising future she has ahead of her. Cuthbert digs into the role of Carly with strength, determination, and horrified realism; you believe as you watch her that she is going through these things and forget all about the actor playing the part, which is the biggest compliment of all.[21] Sergio Leone of the Filmjerk.com said: "Paris Hilton and only plays her known personality in the film. She's overshadowed by the strong work from the rest of the cast, notably Chad Michael Murray and especially Elisha Cuthbert, who gives the film a strong dose of enthusiasm with her Jamie Lee Curtis esque performance." [22] Cuthbert was nominated at Teen Choice Awards in two categories: Best Film Actress - Action / Adventure / Thriller and Choice Movie: Rumble.
+	</div>
+
 	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
 </body>
