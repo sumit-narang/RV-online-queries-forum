@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="head.css">
 	<script type="text/javascript" src="head.js"></script>
 	<style>
+	.navbar{
+		border: none;
+	}
 	.navbar-default{
 	  	background-color: #878887 !important;
 	}
@@ -43,7 +46,39 @@
     	color: white !important;
     	font-size: 20px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 1920px) {
+    	body{
+    		font-size: 28px !important;
+    	}
+    	.navbar-default{
+    		height: 100px!important;
+    	}
+    	.container-fluid{
+    		margin-left: 227px;
+    		margin-right: 227px;
+    	}
+    	.nav-items{
+    	padding-top: 15px !important;
+    	padding-bottom: 15px !important;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	margin-top: 24px;
+        margin-bottom:24px;
+        margin-left: 10px;
+    	}
+    	.unstyle{
+    	font-size: 40px;
+    	padding-top: 15px !important;
+    	padding-bottom: 15px !important;
+    	padding-left: 0px !important;
+    	padding-right: 10px;
+    	margin-top: 24px;
+        margin-bottom:24px;
+        margin-left: 0px;
+        border: 1px solid transparent
+    	}
+    }
+    @media (min-width: 1200px) and (max-width: 1920px) {
     	.nav-items{
     	padding-top: 2px !important;
     	padding-bottom: 2px !important;
