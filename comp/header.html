@@ -10,240 +10,143 @@
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<script type="text/javascript" src="head.js"></script>
 	<style>
-	.navbar{
-		border: none;
-	}
-	.navbar-default{
-	  	background-color: #878887 !important;
-	}
-    .content{
-		margin-top: 70px;
-		margin-bottom: 20px;
-	}
-    .nav-items{
-    	border: 1px solid transparent;
-    	background-color: rgba(0,0,0,0.3) !important;
-    	color: rgba(255,255,255,0.8) !important;
-    	border-radius: 5px; 
-
-    }
-    .nav-items:hover{
-    	border: 1px solid transparent;
-    	background-color: rgba(255,255,255,0.7) !important;
-    	color: black !important;
-    	border-radius: 5px; 
-    }
-    .active{
-    	border: 1px solid transparent;
-    	background-color: rgba(255,255,255,0.7) !important;
-    	color: black !important;
-    	border-radius: 5px;
-    }
-    .active:hover{
-    	border: 1px solid black;
-    	background-color: rgba(255,255,255,0.7) !important;
-    }
-    .unstyle{
-    	color: white !important;
-    	font-size: 20px;
-    }
-    @media (min-width: 1920px) {
-    	body{
-    		font-size: 28px !important;
-    	}
-    	.navbar-default{
-    		height: 100px!important;
-    	}
-    	.container-fluid{
-    		margin-left: 227px;
-    		margin-right: 227px;
-    	}
-    	.nav-items{
-    	padding-top: 15px !important;
-    	padding-bottom: 15px !important;
-    	padding-left: 10px;
-    	padding-right: 10px;
-    	margin-top: 24px;
-        margin-bottom:24px;
-        margin-left: 10px;
-    	}
-    	.unstyle{
-    	font-size: 40px;
-    	padding-top: 15px !important;
-    	padding-bottom: 15px !important;
-    	padding-left: 0px !important;
-    	padding-right: 10px;
-    	margin-top: 24px;
-        margin-bottom:24px;
-        margin-left: 0px;
-        border: 1px solid transparent
-    	}
-    }
-    @media (min-width: 1200px) and (max-width: 1920px) {
-    	.nav-items{
-    	padding-top: 2px !important;
-    	padding-bottom: 2px !important;
-    	padding-left: 10px;
-    	padding-right: 10px;
-    	margin-top: 12px;
-        margin-bottom:12px;
-        margin-left: 5px;
-        }
-        .hidden-gteq-768{
-    		display: none !important;
-    	}
-    	.unstyle{
-    		padding-left: 0 !important;
-    	}
-    }
-    @media (min-width: 992px) and (max-width: 1200px) {
-    	.nav-items{
-    	padding-top: 2px !important;
-    	padding-bottom: 2px !important;
-    	padding-left: 10px;
-    	padding-right: 10px;
-    	margin-top: 12px;
-        margin-bottom:12px;
-        margin-left: 5px;
-    	}
-    	.hidden-gteq-768{
-    		display: none !important;
-    	}
-    	.unstyle{
-    		padding-left: 0 !important;
-    	}
-    }
-    @media (min-width: 768px) and (max-width: 992px) {
-    	.nav-items{
-    	padding-top: 2px !important;
-    	padding-bottom: 2px !important;
-    	padding-left: 10px;
-    	padding-right: 10px;
-    	margin-top: 12px;
-        margin-bottom:12px;
-        margin-left: 5px;
-    	}
-    	.hidden-gteq-768{
-    		display: none !important;
-    	}
-    	.unstyle{
-    		padding-left: 0 !important;
-    	}
-    }
-    @media (min-width: 480px) and (max-width: 768px) {
-    	.nav-items{
-    	padding-top: 2px !important;
-    	padding-bottom: 2px !important;
-    	padding-left: 10px;
-    	padding-right: 10px;
-    	margin-top: 12px;
-        margin-bottom:12px;
-        margin-left: 5px;
-    	}
-    	.no-collapse{
-    		display: inline-block !important;
-    	}
-    	.hidden-lt-768{
-    		display:none !important;
-    	}
-    	.active{
-    		margin-right: 15px;
-    	}
-    	.unstyle{
-    		padding-top: 2px !important;
-    		border: 1px solid transparent;
-    		border-left: none;
-    		padding-bottom: 2px !important;
-    		padding-right: 10px;
-    		margin-top: 12px;
-        	margin-bottom:12px;
-    	}
-    	.navbar-nav{
-    		margin-top: 0;
-    		margin-bottom: 0;
-    	}
-
-    }
-    @media (min-width: 480px) and (max-width: 768px) {
-    	.hidden-lt-650{
-    		display: none !important;
-    	}
-    }
-    @media (max-width: 480px) {
-    	.nav-items{
-    	padding-top: 2px !important;
-    	padding-bottom: 2px !important;
-    	padding-left: 6px !important;
-    	padding-right: 6px !important;
-    	margin-top: 12px;
-        margin-bottom:12px;
-        margin-left: 5px;
-    	}
-    	.no-collapse{
-    		display: inline-block !important;
-    	}
-    	.hidden-lt-650{
-    		display:none !important;
-    	}
-    	.container-heading{
-    		padding-left: 5px;
-    		padding-right: 0;
-    	}
-    	.pull-right{
-    		margin-right:5px; 
-    	}
-    	.navbar-nav{
-    		margin-top: 0;
-    		margin-bottom: 0;
-    	}
-    	.unstyle{
-    		padding-top: 2px !important;
-    		border: 1px solid transparent;
-    		border-left: none;
-    		border-right: none;
-    		padding-bottom: 2px !important;
-    		padding-right: 10px;
-    		margin-top: 12px;
-        	margin-bottom:12px;
-    	}
-    }
-
-    
-  </style>
 	 
+    </style>
 	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-	    <div class="container-fluid container-heading">
+	    <div class="container-fluid header-items">
 		    <ul class="nav navbar-nav pull-left">
-		    	<li class="no-collapse"><a href="#" class="unstyle"><b>Q</b>ue<b>a</b>ns</a></li>
+		    	<li class="inline-block"><a href="#" class="logo"><b>Q</b>ue<b>a</b>ns</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav pull-right">
-		    	<li class="no-collapse hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Post Question</a></li>
-		    	<li class="no-collapse hidden-gteq-768"><a href="#" class="nav-items">Post</a></li>
-		    	<li class="no-collapse "><a href="#" class="nav-items">Unanswered</a></li>
-		    	<li class="no-collapse hidden-lt-650"><a href="#" class="nav-items">Popular</a></li> 
-		    	<li class="no-collapse hidden-lt-650"><a href="#" class="nav-items">Sign Up</a></li>
-        		<li class="no-collapse "><a href="#" class="active nav-items">Login</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Post Question</a></li>
+		    	<li class="inline-block hidden-gteq-768"><a href="#" class="nav-items" data-toggle="modal" data-target="#tags">Tags</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Unanswered</a></li>
+		    	<li class="inline-block hidden-gteq-768"><a href="#" class="nav-items" data-toggle="modal" data-target="#question">Question</a></li>
+		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Popular</a></li> 
+		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Sign Up</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="active nav-items">Login</a></li>
+        		<li class="inline-block hidden-gteq-768"><a href="#" class="active nav-items" data-toggle="modal" data-target="#login">Login</a></li>
 		    </ul>
 	    </div>
 	</nav>
-
-	
-
-
-	<div class="container-fluid content">
-    Soon after her move to Hollywood, she was cast as Kim Bauer, daughter of federal agent Jack Bauer, in the television series 24. She appeared in the show's first three seasons, but not in its fourth; she guest-starred in two episodes in the fifth season. She also reprised her role as Kim Bauer in 24: The Game and again guest-starred in five episodes of the seventh season and in two episodes of the eighth season.
-
-	She began her Hollywood film career with small roles in Old School, which grossed $87 million, her next film, Love Actually, earned $246.4 million worldwide.[9]
-
-	Her first break in a major film role was in 2004, The Girl Next Door. She played an ex–porn star, Danielle, opposite Emile Hirsch. She had reservations about the part, but was persuaded by director Luke Greenfield. She researched the role, speaking to adult actresses from Wicked Pictures and Vivid Entertainment.[10] The film was compared to Risky Business,[11][12] although Cuthbert said her character was not directly based on Rebecca De Mornay's. Critics were divided; some praised the film for boldness, others, notably Roger Ebert, called it gimmicky and exploitative.[13][14] Ebert wrote that he saw Cuthbert's character as "quite the most unpleasant character I have seen in some time."[15] The View London said: Cuthbert is surprisingly good, too – aside from being Drop Dead Gorgeous, she also proves herself a capable comic actress in the Cameron Diaz mould. (Though, sadly, for those of you who like to know these things, her kit remains resolutely on throughout).[16] Cuthbert won two nominations for the MTV Movie Awards:Best Kiss and Best Breakthrough Performance.
-
-	In her next film, Cuthbert starred with Paris Hilton and Chad Michael Murray in the 2005 remake of the horror film House of Wax. In one scene, her character attempted to open her mouth while her lips were sealed with glue. For realism, she used Superglue over prosthetics.[17] House of Wax was largely panned, critics citing a range of flaws. It was called "notable for having some of the most moronic protagonists ever to populate a horror film," though of those characters, critics tended to think Cuthbert "fares the best." Though it received negative reviews the film was a box office success, which grossed $70 million worldwide.[18] The Houston Chronicle cited Cuthbert as an exception.[19] Mick LaSalle of the San Francisco Chronicle said of the film, "Elisha Cuthbert's matter-of-fact, likable quality helps. Seeing her turn into wax would be as bad as seeing that happen to Glenda Farrell (the star of the 1933 version)."[20] The Movie said: "The performances are always professional and understated in their believable cogency, particularly Cuthbert, a talented, beautiful young actress who has proven time and again just what a multilayered and promising future she has ahead of her. Cuthbert digs into the role of Carly with strength, determination, and horrified realism; you believe as you watch her that she is going through these things and forget all about the actor playing the part, which is the biggest compliment of all.[21] Sergio Leone of the Filmjerk.com said: "Paris Hilton and only plays her known personality in the film. She's overshadowed by the strong work from the rest of the cast, notably Chad Michael Murray and especially Elisha Cuthbert, who gives the film a strong dose of enthusiasm with her Jamie Lee Curtis esque performance." [22] Cuthbert was nominated at Teen Choice Awards in two categories: Best Film Actress - Action / Adventure / Thriller and Choice Movie: Rumble.
+    
+   <div class="container-fluid">
+		<!-- row STARTS -->   
+        <div class="row">
+            <!-- 1st column STARTS -->
+   		    <div class="col-lg-2 col-md-2 col-sm-3 aside-container hidden-xs">
+   		    	<h5>Tags</h5>
+	            <ul class="tags">
+	                <li><a href="#" class="tags-sublink">Hostel</a></li>
+	                <li><a href="#" class="tags-sublink">Sports</a></li>
+	                <li><a href="#" class="tags-sublink">Placements</a></li>
+	                <li><a href="#" class="tags-sublink">Freshers</a></li>
+	                <!-- 1st collapse -->
+	                <li><a class="tags-sublink" role="button" data-toggle="collapse" href="#clubs" aria-expanded="false" aria-controls="collapseExample">
+	                    	Clubs<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	                    </a>
+	                    <div class="collapse" id="clubs">
+	                        <ul class="collapse-dropdown">
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink ">Footprints</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Raag</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Ashwa</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Carv</a></li>
+	                        </ul>
+	                    </div>
+	                </li>
+	                <!-- 2nd collapse -->
+	                <li><a class="tags-sublink " role="button" data-toggle="collapse" href="#departments" aria-expanded="false" aria-controls="collapseExample">
+	                        Departments<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	                    </a>
+	                    <div class="collapse" id="departments">
+	                        <ul class="collapse-dropdown">
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Computer Science</a></li>    
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EcE</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EEE</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Maths</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Information Tech</a></li>
+	                        </ul>
+	                    </div>
+	                </li>
+	                <li><a href="#" class="tags-sublink">Lost &amp; Found</a></li>
+	                <li><a href="#" class="tags-sublink">News</a></li>
+	                <li><a href="#" class="tags-sublink">Holidays</a></li>
+	            </ul>
+	        </div><!-- 1st column ENDS -->
+	        <!-- 2nd column START/ Main STARTS -->
+    		<div class="col-md-7 col-lg-7 col-sm-9 col-xs-12 main">
+	    	Soon after her move to Hollywood, she was cast as Kim Bauer, daughter of federal agent Jack Bauer, in the television series 24. She appeared in the show's first three seasons, but not in its fourth; she guest-starred in two episodes in the fifth season. She also reprised her role as Kim Bauer in 24: The Game and again guest-starred in five episodes of the seventh season and in two episodes of the eighth season.
+			She began her Hollywood film career with small roles in Old School, which grossed $87 million, her next film, Love Actually, earned $246.4 million worldwide.[9]
+			Her first break in a major film role was in 2004, The Girl Next Door. She played an ex–porn star, Danielle, opposite Emile Hirsch. She had reservations about the part, but was persuaded by director Luke Greenfield. She researched the role, speaking to adult actresses from Wicked Pictures and Vivid Entertainment.[10] The film was compared to Risky Business,[11][12] although Cuthbert said her character was not directly based on Rebecca De Mornay's. Critics were divided; some praised the film for boldness, others, notably Roger Ebert, called it gimmicky and exploitative.[13][14] Ebert wrote that he saw Cuthbert's character as "quite the most unpleasant character I have seen in some time."[15] The View London said: Cuthbert is surprisingly good, too – aside from being Drop Dead Gorgeous, she also proves herself a capable comic actress in the Cameron Diaz mould. (Though, sadly, for those of you who like to know these things, her kit remains resolutely on throughout).[16] Cuthbert won two nominations for the MTV Movie Awards:Best Kiss and Best Breakthrough Performance.
+			In her next film, Cuthbert starred with Paris Hilton and Chad Michael Murray in the 2005 remake of the horror film House of Wax. In one scene, her character attempted to open her mouth while her lips were sealed with glue. For realism, she used Superglue over prosthetics.[17] House of Wax was largely panned, critics citing a range of flaws. It was called "notable for having some of the most moronic protagonists ever to populate a horror film," though of those characters, critics tended to think Cuthbert "fares the best." Though it received negative reviews the film was a box office success, which grossed $70 million worldwide.[18] The Houston Chronicle cited Cuthbert as an exception.[19] Mick LaSalle of the San Francisco Chronicle said of the film, "Elisha Cuthbert's matter-of-fact, likable quality helps. Seeing her turn into wax would be as bad as seeing that happen to Glenda Farrell (the star of the 1933 version)."[20] The Movie said: "The performances are always professional and understated in their believable cogency, particularly Cuthbert, a talented, beautiful young actress who has proven time and again just what a multilayered and promising future she has ahead of her. Cuthbert digs into the role of Carly with strength, determination, and horrified realism; you believe as you watch her that she is going through these things and forget all about the actor playing the part, which is the biggest compliment of all.[21] Sergio Leone of the Filmjerk.com said: "Paris Hilton and only plays her known personality in the film. She's overshadowed by the strong work from the rest of the cast, notably Chad Michael Murray and especially Elisha Cuthbert, who gives the film a strong dose of enthusiasm with her Jamie Lee Curtis esque performance." [22] Cuthbert was nominated at Teen Choice Awards in two categories: Best Film Actress - Action / Adventure / Thriller and Choice Movie: Rumble.
+			In 2005, Peet appeared in the play This Is How It Goes,[18] filling in for Marisa Tomei at the last minute after six days of rehearsal.[8] Peet also co-starred in Woody Allen's tragicomedy Melinda and Melinda, which was given a limited release in the United States on March 18, 2005. The same year, Peet had the lead role with Ashton Kutcher in the romantic comedy film A Lot Like Love. The film is about two people whose relationship slowly evolves from lust to friendship to romance over the course of seven years. A Lot Like Love received mixed reviews and was a box office success. Los Angeles Times stated that Peet "is charming and charismatic without being cloying or artificial." Her on screen chemistry with Kutcher was either criticized or praised by a number of critics. Peet was nominated for the "Choice Movie Actress: Comedy" at the 2005 Teen Choice Awards.
+			She co-starred alongside George Clooney in the thriller film Syriana, which was based loosely on former Central Intelligence Agency agent Robert Baer and his memoirs of being an agent in the Middle East. In Syriana her character was Julie Woodman, the wife of Brian (played by Matt Damon). The film was released theatrically in November 2005.
+			In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park. Later in 2006, she starred in the romantic drama film Griffin & Phoenix, a remake of the 1976 ABC TV movie, where she played the role of Sarah Phoenix, a terminally-ill woman living life to the fullest. Peet was a member of the cast of the television series Studio 60 on the Sunset Strip, which premiered on NBC on September 18, 2006. She starred with Matthew Perry, with whom she had worked in The Whole Nine Yards and The Whole Ten Yards, and Sarah Paulson, with whom she previously co-starred in Jack & Jill and in "Griffin & Phoenix". In Studio 60, Peet's character Jordan McDeere was the newly appointed president of the National Broadcasting System (NBS). In 2007, she received a Satellite Award nomination for Best Actress – Television Series Drama for her performance in the show.
+			In 2007's The Ex, a romantic comedy, Peet played an attorney who stays home to raise a new baby. The film was released on May 11, 2007 and also starred Zach Braff, Charles Grodin and Jason Bateman. The film generally received negative reviews from critics[19] and had an international gross of $5,142,074.[20]
+			Peet married screenwriter David Benioff on September 30, 2006, in New York City.[44] They have three children: Frances "Frankie"[45] Pen Friedman,[46] born February 20, 2007;[47] Molly June Friedman,[46] born in 2010; and Henry Peet[48] Friedman,[46] born December 6, 2014.[49] To avoid any confusion, Peet's three children use the last name of Friedman,[48] which is husband David Benioff's given last name—he uses his mother's maiden name as his professional name.[50] The family lives in Manhattan and Beverly Hills. Peet was maid of honor at Lauren Holly's marriage in 2001 to Francis Greco.[51]
+            Peet is best friends with actress Sarah Paulson whom she met as castmates in Jack & Jill and co-starred again in Studio 60 on the Sunset Strip.[52] She is also close friends with actor Peter Dinklage with whom she met through friends at Bennington College.[53]
+			</div><!-- 2nd column ENDS -->
+			<!-- 3rd column STARTS -->
+			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+				<section class="popular-post">
+	            	<h5>Popular Posts</h5>
+	            	<ul class="common-right-aside">
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            	</ul>
+	            </section>
+	            <section class="recent-news hidden-sm">
+	            	<h5>Recent News</h5>
+	            	<ul class="common-right-aside">
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            		<li>
+	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+	            		</li>
+	            	</ul>
+	            </section>
+	        </div><!-- 3rd column ENDS -->
+		</div><!-- row END -->
 	</div>
 
 	<footer>
+		<div class="container-fluid">
         <span id="footer-link">
             <a href="">Terms of Use</a>&nbsp;|
             <a href="">About</a>&nbsp;|
@@ -251,8 +154,80 @@
             <a href="">Contact</a>
         </span>
         <span id="copyright">&copy; Queans. All Rights Reserved</span>
+        </div>
     </footer>
 
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" role="dialog">
+    	<div class="vertical-alignment-helper"><!-- vertical align -->
+    		<div class="modal-dialog vertical-align-center">
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1"><!-- Modal content-->
+    				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+					<div class="sm-login-button"><a href="">login</a></div> 
+					<div class="sm-signup-button"><a href="">Signup</a></div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Question Modal -->
+    <div class="modal fade" id="question" role="dialog">
+    	<div class="vertical-alignment-helper"><!-- vertical align -->
+    		<div class="modal-dialog vertical-align-center">
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1"><!-- Modal content-->
+    				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+					<div class="sm-post-button"><a href="">Post Question</a></div> 
+					<div class="sm-popular-button"><a href="">Popular</a></div>
+					<div class="sm-unanswer-button"><a href="">Unanswered</a></div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>
+    <!-- Tags Modal -->
+    <!-- <div class="modal fade" id="tags" role="dialog">
+    	<div class="vertical-alignment-helper">
+    		<div class="modal-dialog vertical-align-center">
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1">
+    				<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<ul class="tags">
+	                <li><a href="#" class="tags-sublink">Hostel</a></li>
+	                <li><a href="#" class="tags-sublink">Sports</a></li>
+	                <li><a href="#" class="tags-sublink">Placements</a></li>
+	                <li><a href="#" class="tags-sublink">Freshers</a></li>
+	                
+	                <li><a class="tags-sublink" role="button" data-toggle="collapse" href="#clubss" aria-expanded="false" aria-controls="collapseExample">
+	                    	Clubs<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	                    </a>
+	                    <div class="collapse" id="clubss">
+	                        <ul class="collapse-dropdown">
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink ">Footprints</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Raag</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Ashwa</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Carv</a></li>
+	                        </ul>
+	                    </div>
+	                </li>
+	                
+	                <li><a class="tags-sublink " role="button" data-toggle="collapse" href="#departmentss" aria-expanded="false" aria-controls="collapseExample">
+	                        Departments<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	                    </a>
+	                    <div class="collapse" id="departmentss">
+	                        <ul class="collapse-dropdown">
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Computer Science</a></li>    
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EcE</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EEE</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Maths</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Information Tech</a></li>
+	                        </ul>
+	                    </div>
+	                </li>
+	                <li><a href="#" class="tags-sublink">Lost &amp; Found</a></li>
+	                <li><a href="#" class="tags-sublink">News</a></li>
+	                <li><a href="#" class="tags-sublink">Holidays</a></li>
+	            </ul>
+				</div>
+    		</div>
+    	</div>
+    </div>  -->
 	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
 </body>
