@@ -31,6 +31,7 @@
     color: white !important;
     font-size: 20px;
 }
+
 /*Media queries for Header START*/
 @media (min-width: 1920px) {
     body{
@@ -62,6 +63,9 @@
         margin-bottom:24px;
         margin-left: 0px;
         border: 1px solid transparent
+    }
+    .hidden-gteq-1920{
+        display: none !important;
     }
 }
 @media (min-width: 1200px) and (max-width: 1919px) {
