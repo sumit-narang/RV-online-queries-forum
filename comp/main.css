@@ -134,3 +134,7 @@
     left: -2px;
     width: 4px;
 }
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
