@@ -174,4 +174,9 @@ body{
 	border-radius: 5px 5px 0 0;
 	padding-top: 30px;
 	margin-bottom: 30px;
+	
+  -webkit-box-shadow: 0 6px 6px -6px #c1c3c1;
+     -moz-box-shadow: 0 6px 6px -6px #c1c3c1;
+          box-shadow: 0 6px 6px -6px #c1c3c1;
+
 }
