@@ -197,12 +197,19 @@ body{
 .center-navigation{
 	text-align: center;
 	font-size: 16px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 .pagination li a{
 	margin-left: 5px;
 	margin-right: 5px;
 	border: none;
+}
+@media(max-width: 350px){
+	.pagination li a{
+		margin-left: 2px;
+		margin-right: 2px;
+		border: none;
+	}
 }
 .pagination li a:hover{
 	background-color: #1b8ff4 !important;
@@ -210,6 +217,12 @@ body{
 }
 .glyphicon-chevron-left,.glyphicon-chevron-right{
 	font-size: 18px;
+}
+.pagination .previous{
+	padding-left: 0 !important;
+}
+.pagination .next{
+	padding-right: 0 !important;
 }
 .pagination .previous:hover,.pagination .next:hover{
 	background:none !important;
