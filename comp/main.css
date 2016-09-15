@@ -38,6 +38,12 @@
 
 .question h4{
 	margin-bottom: 0;
+	font-weight: bold;
+}
+.question p{
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 18px;
 }
 .ques-info{
 	color: #848d95;
