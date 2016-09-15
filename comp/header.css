@@ -262,14 +262,21 @@ footer{
 .tags-sublink{
     display: inline-block;
     width: 100%;
-    padding: 10px 10px;
+    padding: 7px 10px;
     color: #333;
     border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 5px;
     /*border-bottom: 1px solid #edeeed;*/
-    border-bottom: 1px solid #f4f6f4;
+    
+    background-color: #f8f9f8;
+    /*border-bottom: 1px solid #f4f6f4;*/
+}
+.glyphicon-chevron-down{
+    color: #818283;
 }
 .tags-sublink:hover,.tags-sublink:active,.tags-sublink:focus{
-    background-color: #f4f6f4;
+    background-color: #ebedef;
     text-decoration: none;
     color: black;
 }
