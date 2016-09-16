@@ -109,13 +109,13 @@
     							Report</a>
     						</span>
     						<span class="post-menu-answer">
-    							<a role="button" data-toggle="collapse" href="#write-answer" aria-expanded="false" aria-controls="write-answer">
+    							<a role="button" data-toggle="modal" data-target="#common-post-answer">
     							Answer</a>
-    							<div class="collapse" id="write-answer">
+    							<!-- <div class="collapse" id="write-answer">
   									<div class="well">
     									It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
   									</div>
-								</div>
+								</div> -->
     						</span>
     						
     					
@@ -164,13 +164,13 @@
     							Report</a>
     						</span>
     						<span class="post-menu-answer">
-    							<a role="button" data-toggle="collapse" href="#write-answer1" aria-expanded="false" aria-controls="write-answer1">
+    							<a role="button" data-toggle="modal" data-target="#common-post-answer">
     							Answer</a>
-    							<div class="collapse" id="write-answer1">
+    							<!-- <div class="collapse" id="write-answer">
   									<div class="well">
     									It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
   									</div>
-								</div>
+								</div> -->
     						</span>
     						
     					
@@ -219,13 +219,13 @@
     							Report</a>
     						</span>
     						<span class="post-menu-answer">
-    							<a role="button" data-toggle="collapse" href="#write-answer2" aria-expanded="false" aria-controls="write-answer2">
+    							<a role="button" data-toggle="modal" data-target="#common-post-answer">
     							Answer</a>
-    							<div class="collapse" id="write-answer2">
+    							<!-- <div class="collapse" id="write-answer">
   									<div class="well">
     									It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
   									</div>
-								</div>
+								</div> -->
     						</span>
     						
     					
@@ -407,7 +407,44 @@
     		</div>
     	</div>
     </div>
-     
+    <!-- common post answer modal -->
+
+    <div class="modal fade" id="common-post-answer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  	<div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close close-post-answer" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">When is the fastrack results coming out?</h4>
+	      </div>
+	      <div class="modal-body">
+	        
+	      	<div class="post-answer">
+		    	
+			        <div class="post-answer-link">
+			            <span><a href=""><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></a></span>
+			            <span><a href=""><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></a></span>
+			            <span><a href=""><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a></span>
+			            <span><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></span>&nbsp;&nbsp;
+			            <span class="checkbox"><label><input type="checkbox">Anonymous</label></span>
+			        </div>
+			        
+			            <textarea name="textarea" rows="4"></textarea>
+			            
+		        
+		    	
+			</div>
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Post</button>
+	      </div>
+	    </div>
+	  	</div>
+	</div>
+
+
+    
 	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
 	<script type="text/javascript">

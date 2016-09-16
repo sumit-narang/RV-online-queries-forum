@@ -234,3 +234,43 @@ body{
 }
 
 
+
+/*post answer*/
+.post-answer{
+        background-color: #f8f9f8;
+       /* margin-top: 100px;
+        margin-left: 300px;*/
+        /*width: 500px;*/
+        padding: 10px; 
+    }
+    .post-answer-link{
+        padding-top: 5px;
+        /*padding-left: 5px;*/
+    }
+    .post-answer-link span a{
+        padding: 4px;
+        border: 1px solid transparent;
+    } 
+    .post-answer-link span a:hover{
+        border: 1px solid #1b8ff4;
+        border-radius: 3px;
+    } 
+    textarea{
+        margin-top: 10px;
+        
+        width: 100%;
+    }
+.glyphicon-bold,.glyphicon-italic,.glyphicon-picture,.glyphicon-link{
+	float: none !important;
+}
+.close-post-answer{
+	color: black;
+}
+.close-post-answer:hover{
+	color: grey;
+}
+.checkbox{
+       display: inline !important;
+
+}
+
