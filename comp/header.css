@@ -272,6 +272,13 @@ footer{
     background-color: #f8f9f8;
     /*border-bottom: 1px solid #f4f6f4;*/
 }
+.collapse-dropdown-sublink{
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.collapse-dropdown:last-child{
+    margin-bottom: 5px !important;
+}
 .glyphicon-chevron-down{
     color: #818283;
 }
@@ -419,9 +426,9 @@ h5{
     padding-bottom: 5vh !important;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    background: white !important; 
-    /*background-image: linear-gradient( 135deg,#16636b,#1c5e71 15%,#2e5378 30%,#3c5189 45%,#4e4c91 60%,#51427a 75%,#523c70 87%,#51355d);
-    */border-radius:7px 7px 7px 7px;
+    /*background: white !important;*/ 
+    background-image: linear-gradient( 135deg,#16636b,#1c5e71 15%,#2e5378 30%,#3c5189 45%,#4e4c91 60%,#51427a 75%,#523c70 87%,#51355d);
+    border-radius:7px 7px 7px 7px;
 }
 .gradient {
     /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */

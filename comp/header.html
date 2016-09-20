@@ -9,11 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="../bootsign.css">
 	<link rel="stylesheet" type="text/css" href="header.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="modal.css">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<script type="text/javascript" src="head.js"></script>
 	<!-- tooltip -->
-    
+    <style type="text/css">
+    	
+    </style>
 	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
 </head>
 <body>
@@ -23,14 +27,14 @@
 		    	<li class="inline-block"><a href="#" class="logo"><b>Q</b>ueans</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav pull-right">
-		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Post Question</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="post.html" class="nav-items">Post Question</a></li>
 		    	<li class="inline-block hidden-gteq-768 hidden-gteq-1920"><a href="#" class="nav-items" data-toggle="modal" data-target="#tags">Tags</a></li>
-		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Unanswered</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="unanswered.html" class="nav-items">Unanswered</a></li>
 		    	<li class="inline-block hidden-gteq-768 hidden-gteq-1920"><a href="#" class="nav-items" data-toggle="modal" data-target="#question">Question</a></li>
-		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Popular</a></li> 
-		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Sign Up</a></li>
-		    	<li class="inline-block hidden-lt-768 hidden-lt-650 hidden-gteq-1920"><a href="#" class="active nav-items">Login</a></li>
-        		<li class="inline-block hidden-gteq-768"><a href="#" class="active nav-items" data-toggle="modal" data-target="#login">Login</a></li>
+		    	<li class="inline-block hidden-lt-650"><a href="popular.html" class="nav-items">Popular</a></li> 
+		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650 hidden-gteq-1920"><a class="active nav-items" data-toggle="modal" data-target="#login">Login</a></li>
+        		<li class="inline-block hidden-gteq-768"><a class="active nav-items" data-toggle="modal" data-target="#login-smallscreen">Login</a></li>
 		    </ul>
 	    </div>
 	</nav>
@@ -65,11 +69,20 @@
 	                    </a>
 	                    <div class="collapse" id="departments">
 	                        <ul class="collapse-dropdown">
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Aerospace</a></li>    
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Biotechnology</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Chemical</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Civil</a></li>
 	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Computer Science</a></li>    
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EcE</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EEE</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Maths</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Information Tech</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Electrical &amp; Electronics</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Electronics &amp; Communication</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Electronics &amp; Instrumentation</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Industrial Engineering &amp; Management</a></li>    
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Master of Computer Applications</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Mechanical</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Chemistry</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Physics</a></li>
+	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Mathematics</a></li>
 	                        </ul>
 	                    </div>
 	                </li>
@@ -81,196 +94,122 @@
 	        <!-- 2nd column START/ Main STARTS -->
     		<div class="col-md-7 col-lg-7 col-sm-9 col-xs-12 main">
     			<div class="common-date"><strong >13 Sep,2016</strong></div>
-    			<section>
-    				<div class="ques-info">
+    				<section>
+    					<div class="ques-info">
     						<span class="user-name">Sumit</span>
     						<span class="qtime">
     						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
     						<span class="qtime-posted">15 Sep,2016 8:25 AM</span>
     						</span>
     					</div>
-    				<article>
-    					<div class="question">
+    					<article>
+    						<div class="question">
     							<h4><Strong>When is the fastrack results coming out?</Strong></h4>
-    					</div>
-    					
-    					<div class="answer">
-    						I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
-    					</div>
-    					<div class="post-menu">
-    						<span class="post-menu-upvote">
-    							<a href="">Upvote</a>
-    						</span>
-    						<span class="post-menu-downvote">
-    							<a href="">Downvote</a>
-    						</span>
-    						<span class="post-menu-report">
-    							<a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
-    							Report</a>
-    						</span>
-    						<span class="post-menu-answer">
-    							<a role="button" data-toggle="modal" data-target="#common-post-answer">
-    							Answer</a>
-    							<!-- <div class="collapse" id="write-answer">
-  									<div class="well">
-    									It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
-  									</div>
-								</div> -->
-    						</span>
-    						
-    					
-    					</div>
-    					<div class="tagged-question">
-    						<span class="tag-links">
-    							<a href="">
-    								Department
-    							</a>
-    							<a href="">
-    								computer Science
-    							</a>
-    							<a href="">
-    								Holiday
-    							</a>
-    						</span>
-    					</div>	
-    				</article>
-    			</section>
-    			
-    			<section>
-    				<div class="ques-info">
+    						</div>
+    						<div class="answer">
+    							I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
+    						</div>
+    						<div class="post-menu">
+    							<span class="post-menu-upvote"><a href="">Upvote</a></span>
+    							<span class="post-menu-downvote"><a href="">Downvote</a></span>
+    							<span class="post-menu-report"><a href="" data-toggle="tooltip" data-placement="top" title="Inappropriate Quesion">Report</a></span>
+    							<span class="post-menu-answer"><a role="button" data-toggle="modal" data-target="#common-post-answer">Answer</a></span>
+    						</div>
+    						<div class="tagged-question">
+    							<ul class="tag-links">
+    								<li>Department</li>
+    								<li>Computer Science</li>
+    								<li>Holiday</li>
+    							</ul>
+    						</div>	
+    					</article>
+    				</section>
+    				<section>
+    					<div class="ques-info">
     						<span class="user-name">Sumit</span>
     						<span class="qtime">
     						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
     						<span class="qtime-posted">15 Sep,2016 8:25 AM</span>
     						</span>
     					</div>
-    				<article>
-    					<div class="question">
-    							<h4><Strong>When is the fastrack results coming out?</Strong></h4>
-    					</div>
-    					
-    					<div class="answer">
-    						I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
-    					</div>
-    					<div class="post-menu">
-    						<span class="post-menu-upvote">
-    							<a href="">Upvote</a>
-    						</span>
-    						<span class="post-menu-downvote">
-    							<a href="">Downvote</a>
-    						</span>
-    						<span class="post-menu-report">
-    							<a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
-    							Report</a>
-    						</span>
-    						<span class="post-menu-answer">
-    							<a role="button" data-toggle="modal" data-target="#common-post-answer">
-    							Answer</a>
-    							<!-- <div class="collapse" id="write-answer">
-  									<div class="well">
-    									It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
-  									</div>
-								</div> -->
-    						</span>
-    						
-    					
-    					</div>
-    					<div class="tagged-question">
-    						<span class="tag-links">
-    							<a href="">
-    								Department
-    							</a>
-    							<a href="">
-    								computer Science
-    							</a>
-    							<a href="">
-    								Holiday
-    							</a>
-    						</span>
-    					</div>	
-    				</article>
-    			</section>
-    			
-    			<section>
-    				<div class="ques-info">
+    					<article>
+    						<div class="question">
+    							<h4><Strong>Is the coming Friday a holiday?</Strong></h4>
+    						</div>
+    						<div class="answer">
+    							I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
+    						</div>
+    						<div class="post-menu">
+    							<span class="post-menu-upvote"><a href="">Upvote</a></span>
+    							<span class="post-menu-downvote"><a href="">Downvote</a></span>
+    							<span class="post-menu-report"><a href="" data-toggle="tooltip" data-placement="top" title="Inappropriate Quesion">Report</a></span>
+    							<span class="post-menu-answer"><a role="button" data-toggle="modal" data-target="#common-post-answer">Answer</a></span>
+    						</div>
+    						<div class="tagged-question">
+    							<ul class="tag-links">
+    								<li>Department</li>
+    								<li>News</li>
+    								<li>Holiday</li>
+    							</ul>
+    						</div>	
+    					</article>
+    				</section>
+    				<section>
+    					<div class="ques-info">
     						<span class="user-name">Sumit</span>
     						<span class="qtime">
     						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
     						<span class="qtime-posted">15 Sep,2016 8:25 AM</span>
     						</span>
     					</div>
-    				<article>
-    					<div class="question">
-    							<h4><Strong>When is the fastrack results coming out?</Strong></h4>
-    					</div>
-    					
-    					<div class="answer">
-    						I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
-    					</div>
-    					<div class="post-menu">
-    						<span class="post-menu-upvote">
-    							<a href="">Upvote</a>
-    						</span>
-    						<span class="post-menu-downvote">
-    							<a href="">Downvote</a>
-    						</span>
-    						<span class="post-menu-report">
-    							<a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
-    							Report</a>
-    						</span>
-    						<span class="post-menu-answer">
-    							<a role="button" data-toggle="modal" data-target="#common-post-answer">
-    							Answer</a>
-    							<!-- <div class="collapse" id="write-answer">
-  									<div class="well">
-    									It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
-  									</div>
-								</div> -->
-    						</span>
-    						
-    					
-    					</div>
-    					<div class="tagged-question">
-    						<span class="tag-links">
-    							<a href="">
-    								Department
-    							</a>
-    							<a href="">
-    								computer Science
-    							</a>
-    							<a href="">
-    								Holiday
-    							</a>
-    						</span>
-    					</div>	
-    				</article>
-    			</section>
-    			<!-- page navigation links -->
-    			<nav aria-label="Page navigation">
-    			  <div class="center-navigation">
-				  <ul class="pagination">
-				    <li>
-				      <a href="#" aria-label="Previous" class="previous" disabled="disabled">
-				        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				      </a>
-				    </li>
-				    <li><a href="#" class="current-page">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">4</a></li>
-				    <li><a href="#">5</a></li>
-				    <li>
-				      <a href="#" aria-label="Next" class="next">
-				        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				      </a>
-				    </li>
-				  </ul>
-				  </div>
-				</nav>
+    					<article>
+    						<div class="question">
+    							<h4><Strong>Anyone has Stranger things?</Strong></h4>
+    						</div>
+    						<div class="answer">
+    							I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
+    						</div>
+    						<div class="post-menu">
+    							<span class="post-menu-upvote"><a href="">Upvote</a></span>
+    							<span class="post-menu-downvote"><a href="">Downvote</a></span>
+    							<span class="post-menu-report"><a href="" data-toggle="tooltip" data-placement="top" title="Inappropriate Quesion">Report</a></span>
+    							<span class="post-menu-answer"><a role="button" data-toggle="modal" data-target="#common-post-answer">Answer</a></span>
+    						</div>
+    						<div class="tagged-question">
+    							<ul class="tag-links">
+    								<li>Hostel</li>
+    							</ul>
+    						</div>	
+    					</article>
+    				</section><!-- 15 sets of question ends -->
+
+	    			<!-- page navigation links -->
+	    			<nav aria-label="Page navigation">
+	    			  	<div class="center-navigation">
+					  		<ul class="pagination">
+						    	<li>
+							      	<a href="#" aria-label="Previous" class="previous" disabled="disabled">
+							        	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							      	</a>
+						    	</li>
+						    	<li><a href="#" class="current-page">1</a></li>
+						    	<li><a href="#">2</a></li>
+						    	<li><a href="#">3</a></li>
+						    	<li><a href="#">4</a></li>
+						    	<li><a href="#">5</a></li>
+						    	<li>
+							      	<a href="#" aria-label="Next" class="next">
+							        	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							      	</a>
+						    	</li>
+					  		</ul>
+					  	</div>
+					</nav>
 	    	</div><!-- 2nd column ENDS -->
+
 			<!-- 3rd column STARTS -->
 			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-				<section class="popular-post">
+				<aside class="popular-post">
 	            	<h5>Popular Posts</h5>
 	            	<ul class="common-right-aside">
 	            		<li>
@@ -294,8 +233,8 @@
 	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
 	            		</li>
 	            	</ul>
-	            </section>
-	            <section class="recent-news hidden-sm">
+	            </aside>
+	            <aside class="recent-news hidden-sm">
 	            	<h5>Recent News</h5>
 	            	<ul class="common-right-aside">
 	            		<li>
@@ -319,131 +258,238 @@
 	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
 	            		</li>
 	            	</ul>
-	            </section>
+	            </aside>
 	        </div><!-- 3rd column ENDS -->
 		</div><!-- row END -->
 	</div>
 
 	<footer>
 		<div class="container-fluid">
-        <span id="footer-link">
-            <a href="">Terms of Use</a>&nbsp;|
-            <a href="">About</a>&nbsp;|
-            <a href="">Report Bugs</a>&nbsp;|
-            <a href="">Contact</a>
-        </span>
-        <span id="copyright">&copy; Queans. All Rights Reserved</span>
+	        <span id="footer-link">
+	            <a href="">Terms of Use</a>&nbsp;|
+	            <a href="">About</a>&nbsp;|
+	            <a href="">Report Bugs</a>&nbsp;|
+	            <a href="">Contact</a>
+	        </span>
+	        <span id="copyright">&copy; Queans. All Rights Reserved</span>
         </div>
     </footer>
 
-    <!-- Login Modal -->
-    <div class="modal fade" id="login" role="dialog">
-    	<div class="vertical-alignment-helper"><!-- vertical align -->
+    <!-- Login smallscreen Modal STARTS-->
+    <div class="modal fade" id="login-smallscreen" role="dialog">
+    	<!-- vertical align -->
+    	<div class="vertical-alignment-helper">
     		<div class="modal-dialog vertical-align-center">
-	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1"><!-- Modal content-->
-    				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+    			<!-- Modal content-->
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1">
 					<div class="sm-login-button"><a href="">login</a></div> 
 					<div class="sm-signup-button"><a href="">Signup</a></div>
 	    		</div>
     		</div>
     	</div>
-    </div>
-    <!-- Question Modal -->
-    <div class="modal fade" id="question" role="dialog">
-    	<div class="vertical-alignment-helper"><!-- vertical align -->
+    </div><!-- Login smallscreen Modal ENDS -->
+
+    <!-- Question smallscreen Modal STARTS-->
+    <div class="modal fade" id="question-smallscreen" role="dialog">
+    	<!-- vertical align -->
+    	<div class="vertical-alignment-helper">
     		<div class="modal-dialog vertical-align-center">
-	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1"><!-- Modal content-->
-    				<!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-					<div class="sm-post-button"><a href="">Post Question</a></div> 
+    			<!-- Modal content-->
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1">
+    				<div class="sm-post-button"><a href="">Post Question</a></div> 
 					<div class="sm-popular-button"><a href="">Popular</a></div>
 					<div class="sm-unanswer-button"><a href="">Unanswered</a></div>
 	    		</div>
     		</div>
     	</div>
-    </div>
-    <!-- Tags Modal -->
+    </div><!-- Question smallscreen Modal ENDS-->
+
+    <!-- Tags smallscreen Modal STARTS-->
     <div class="modal fade" id="tags" role="dialog">
     	<div class="vertical-alignment-helper">
     		<div class="modal-dialog vertical-align-center">
 	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1">
     				<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<ul class="tags">
-	                <li><a href="#" class="tags-sublink">Hostel</a></li>
-	                <li><a href="#" class="tags-sublink">Sports</a></li>
-	                <li><a href="#" class="tags-sublink">Placements</a></li>
-	                <li><a href="#" class="tags-sublink">Freshers</a></li>
-	                
-	                <li><a class="tags-sublink" role="button" data-toggle="collapse" href="#clubss" aria-expanded="false" aria-controls="collapseExample">
-	                    	Clubs<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-	                    </a>
-	                    <div class="collapse" id="clubss">
-	                        <ul class="collapse-dropdown">
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink ">Footprints</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Raag</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Ashwa</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Carv</a></li>
-	                        </ul>
-	                    </div>
-	                </li>
-	                
-	                <li><a class="tags-sublink " role="button" data-toggle="collapse" href="#departmentss" aria-expanded="false" aria-controls="collapseExample">
-	                        Departments<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-	                    </a>
-	                    <div class="collapse" id="departmentss">
-	                        <ul class="collapse-dropdown">
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Computer Science</a></li>    
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EcE</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EEE</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Maths</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Information Tech</a></li>
-	                        </ul>
-	                    </div>
-	                </li>
-	                <li><a href="#" class="tags-sublink">Lost &amp; Found</a></li>
-	                <li><a href="#" class="tags-sublink">News</a></li>
-	                <li><a href="#" class="tags-sublink">Holidays</a></li>
-	            </ul>
+		                <li><a href="#" class="tags-sublink">Hostel</a></li>
+		                <li><a href="#" class="tags-sublink">Sports</a></li>
+		                <li><a href="#" class="tags-sublink">Placements</a></li>
+		                <li><a href="#" class="tags-sublink">Freshers</a></li>
+		                <li><a class="tags-sublink" role="button" data-toggle="collapse" href="#clubss" aria-expanded="false" aria-controls="collapseExample">
+		                    	Clubs<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		                    </a>
+		                    <div class="collapse" id="clubss">
+		                        <ul class="collapse-dropdown">
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink ">Footprints</a></li>
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Raag</a></li>
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Ashwa</a></li>
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Carv</a></li>
+		                        </ul>
+		                    </div>
+		                </li>
+		                <li><a class="tags-sublink " role="button" data-toggle="collapse" href="#departmentss" aria-expanded="false" aria-controls="collapseExample">
+		                        Departments<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+		                    </a>
+		                    <div class="collapse" id="departmentss">
+		                        <ul class="collapse-dropdown">
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Computer Science</a></li>    
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EcE</a></li>
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EEE</a></li>
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Maths</a></li>
+		                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Information Tech</a></li>
+		                        </ul>
+		                    </div>
+		                </li>
+		                <li><a href="#" class="tags-sublink">Lost &amp; Found</a></li>
+		                <li><a href="#" class="tags-sublink">News</a></li>
+		                <li><a href="#" class="tags-sublink">Holidays</a></li>
+	            	</ul>
 				</div>
     		</div>
     	</div>
-    </div>
+    </div><!-- Tags smallscreen Modal ENDS-->
+
     <!-- common post answer modal -->
-
-    <div class="modal fade" id="common-post-answer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="common-post-answer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  	<div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close close-post-answer" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">When is the fastrack results coming out?</h4>
-	      </div>
-	      <div class="modal-body">
-	        
-	      	<div class="post-answer">
-		    	
-			        <div class="post-answer-link">
-			            <span><a href=""><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></a></span>
-			            <span><a href=""><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></a></span>
-			            <span><a href=""><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a></span>
-			            <span><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></span>&nbsp;&nbsp;
-			            <span class="checkbox"><label><input type="checkbox">Anonymous</label></span>
-			        </div>
-			        
-			            <textarea name="textarea" rows="4"></textarea>
-			            
-		        
-		    	
-			</div>
-
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Post</button>
-	      </div>
-	    </div>
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+		        	<button type="button" class="close close-post-answer" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        	<h4 class="modal-title" id="myModalLabel">When is the fastrack results coming out?</h4>
+	      		</div>
+		      	<div class="modal-body">
+			        <div class="post-answer">
+			    		<div class="post-answer-link">
+				            <span><a href=""><span class="glyphicon glyphicon-bold" aria-hidden="true"></span></a></span>
+				            <span><a href=""><span class="glyphicon glyphicon-italic" aria-hidden="true"></span></a></span>
+				            <span><a href=""><span class="glyphicon glyphicon-picture" aria-hidden="true"></span></a></span>
+				            <span><a href=""><span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></span>&nbsp;&nbsp;
+				            <span class="checkbox"><label><input type="checkbox">Anonymous</label></span>
+				        </div>
+				        <textarea name="textarea" rows="4"></textarea>
+				    </div>
+				</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        	<button type="button" class="btn btn-primary">Post</button>
+		      	</div>
+	    	</div>
 	  	</div>
 	</div>
 
 
+	<!-- Signup Modal -->
+    <div class="modal fade" id="signup" role="dialog">
+    	<div class="vertical-alignment-helper"><!-- vertical align -->
+    		<div class="modal-dialog vertical-align-center">
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4 col-sm-offset-3  col-xs-offset-1"><!-- Modal content-->
+    				<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1"> 
+						<!--starting form-->
+						<form>
+							<!--Username-->
+							<div class="form-group">
+		    					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+		  					</div>
+
+							<!--Usn/id-->
+							<div class="form-group">
+		    					<input type="text" class="form-control" id="exampleInputEmail1" placeholder="USN/ID">
+		  					</div>
+
+							<!--Email-->
+							<div class="form-group">
+		    					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		  				    </div>
+
+							<!--Password-->
+							<div class="form-group">
+		    					<input type="password" class="form-control" id="exampleInputEmail1" placeholder="Password">
+		  					</div>
+
+							<!--Student/faculty-->
+							<div class="form-group">
+							    <select class="form-control select-option">
+							    	<option>User Type:</option>
+		    						<option>Student</option>
+		    						<option>Faculty</option>
+								</select>
+							</div>
+
+		    				<!--Department-->
+							<div class="form-group">
+								<select class="form-control select-option">
+								    <option>Department:</option>
+			    					<option>Aerospace</option>
+			    					<option>Biotechnology</option>
+			    					<option>Chemical</option>
+			    					<option>Civil</option>
+			    					<option>Computer Science</option>
+			    					<option>Electrical &amp; Electronics</option>
+			    					<option>Electronics &amp; Communication</option>
+			    					<option>Electronics &amp; Instrumentation</option>
+			    					<option>Industrial Engineering &amp; Management</option>
+			    					<option>Master of Computer Applications</option>
+			    					<option>Mechanical</option>
+			    					<option>Chemistry</option>
+			    					<option>Physics</option>
+			    					<option>Mathematics</option>
+								</select>
+							</div>
+
+							<!--upload id card-->
+		  					<div class="form-group form-custom-file">
+								<input type="file" class="form-control-custom" id="exampleInputFile">
+							</div>
+							<span class="help-block">Upload ID Card Photo</span><br>
+								
+							<!--submit button-->
+							<button type="submit" class="btn btn-default btn-custom">Sign Up</button>
+						</form>
+					</div><!--inner padding form-->
+					<div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+					<div class="login-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						By signing Up, you agree to our <a href="#">Terms &amp; Condition</a>
+						<br>Already have an account? <a href="#">Log In</a>
+					</div>  
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="login" role="dialog">
+    	<div class="vertical-alignment-helper"><!-- vertical align -->
+    		<div class="modal-dialog vertical-align-center">
+	    		<div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-offset-4 col-md-offset-4  col-sm-offset-3"><!-- Modal content-->
+    				<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+					    <!--starting form-->
+						<form>
+
+						    <!--Email-->
+						    <div class="form-group">
+	    						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  						</div>
+
+						    <!--Password-->
+						    <div class="form-group">
+	    						<input type="password" class="form-control" id="exampleInputEmail1" placeholder="Password">
+	  						</div>
+
+							<!--submit button-->
+						    <button type="submit" class="btn btn-default btn-custom">Login</button>
+						</form>
+					</div><!--inner padding form-->
+					<div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+					<div class="login-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						Don't have an account <a href="#">Sign Up</a>
+						<br><a href="#">Forgot Password ?</a>
+					</div>  
+	    		</div>
+    		</div>
+    	</div>
+    </div>
     
 	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.js"></script>
