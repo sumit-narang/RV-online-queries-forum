@@ -67,12 +67,15 @@
 
 }
 .post-menu-upvote a,.post-menu-downvote a,.post-menu-answer a,.post-menu-report a{
-	border: 1px solid #459fed;
+	border: 1px solid transparent;
 	padding: 3px 5px;
 	border-radius: 5px;
-	background-color: #459fed;
+	background-color: #67b1f1;
 	color: white;
 	font-size: 13px;
+}
+.post-menu-upvote a:hover,.post-menu-downvote a:hover,.post-menu-answer a:hover,.post-menu-report a:hover{
+	text-decoration: none;
 }
 @media(max-width:330px){
 	.post-menu-answer a{
@@ -112,6 +115,7 @@
 .tag-links li{
 	background-color: #767676;
 	background-color: #459fed;
+	background-color: #808080;
     border-radius: 0 2px 2px 0;
     color: #fff;
     display: inline-block;
@@ -128,6 +132,7 @@
 	border-top: 10px solid transparent;
     border-right: 8px solid #767676;
     border-right: 8px solid #459fed;
+    border-right: 8px solid #808080;
     border-bottom: 10px solid transparent;
     content: "";
     height: 0;
