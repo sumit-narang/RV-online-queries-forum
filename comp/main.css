@@ -31,10 +31,10 @@
  width: 10%;
 }
 .common-date:before {
- right: 1em;
+ right: 0.5em;
 }
 .common-date:after {
- left: 1em;
+ left: 0.5em;
 }
 
 .question h4{
@@ -155,13 +155,14 @@
     width: 4px;
 }
 body{
-	font-family:'Open Sans', sans-serif;
+	font-family:sans-serif;
 	color: black;
 
 }
 h4{
-	font-family:'Open Sans', sans-serif; 
-	font-size: 20px;
+	font-family:'Roboto', sans-serif; 
+	font-size: 30px;
+	font-weight: 500;
 }
 /*section{
 	background-color: #f7f9f7;
@@ -297,5 +298,21 @@ h4{
 .checkbox{
        display: inline !important;
 
+}
+/*fonts*/
+.tags,.tag-links{
+	font-family:sans-serif;
+}
+.tags-sublink{
+	color: black;
+}
+.main section article{
+	font-family:'Roboto', sans-serif !important;
+}
+h4{
+	font-family:'Roboto', sans-serif; 
+}
+.popular-post,.recent-news{
+	font-family:'Roboto', sans-serif !important;
 }
 
