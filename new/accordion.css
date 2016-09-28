@@ -1,0 +1,9 @@
+.container-fluid{
+	padding-left: 0;
+}
+.panel-group .panel + .panel-custom {
+    margin-top: 0;
+}
+.panel-heading{
+	background-color:rgba(0,0,0,0.2);
+}

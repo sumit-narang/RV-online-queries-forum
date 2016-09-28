@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title>sidebar</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootsign.css">
+	<link rel="stylesheet" type="text/css" href="head.css">
+	<script type="text/javascript" src="head.js"></script>
+	<style>
+        .fixed-aside{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .left-aside-sublink{
+            display: fixed;
+            display: inline-block;
+            width: 100%;
+            padding: 10px 10px;
+            color: black;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #edeeed;
+        }
+        .left-aside-sublink:hover,.left-aside-sublink:active,.left-aside-sublink:focus{
+            background-color: #f4f6f4;
+            text-decoration: none;
+            color: black;
+        }
+        .left-aside{
+            height: 100%;
+            height: 100vh;
+            margin-top: 50px;/*
+            background-color: #878887;*/
+            border-right: 1px solid #bfc1bf;
+            padding: 0px 0px !important;
+        }
+        .glyphicon{
+            float: right;
+        }
+        .collapse-subgroup{
+            background-color: #f4f6f4
+            margin-bottom: 5px!important;
+        }
+        .collapse-sublink{
+            border-bottom: 1px solid transparent !important;
+            border-left: 10px solid #bfc1bf; 
+            padding-left: 15px;
+            border-top: none;
+            color: #9b9c9d;
+        }
+        .collapse-sublink:hover{
+            border-left: 10px solid #1aa3fa; 
+        }
+        li:last-child a{
+            border-bottom:1px solid transparent !important;
+        }
+        .collapse-subgroup li:last-child a{
+            border-bottom: 1px solid #edeeed !important;
+        }
+    </style>
+	 
+	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
+</head>
+<body>
+
+<aside>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 left-aside">
+                <ul class="fixed-aside">
+                    <li><a href="#" class="left-aside-sublink">Hostel</a></li>
+                    <li><a href="#" class="left-aside-sublink">Sports</a></li>
+                    <li><a href="#" class="left-aside-sublink">Placements</a></li>
+                    <li><a href="#" class="left-aside-sublink">Freshers</a></li>
+                    <!-- 1st collapse -->
+                    <li><a class="left-aside-sublink" role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                        Clubs<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </a>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="collapse-subgroup">
+                                <ul class="fixed-aside">
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Footprints</a></li>
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Raag</a></li>
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Ashwa</a></li>
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Carv</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 2nd collapse -->
+                    <li><a class="left-aside-sublink " role="button" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                        Departments<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                        </a>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="collapse-subgroup">
+                                <ul class="fixed-aside">
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Computer Science</a></li>    
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">EcE</a></li>
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">EEE</a></li>
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Maths</a></li>
+                                    <li><a href="#" class="left-aside-sublink collapse-sublink">Information Tech</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="left-aside-sublink">Lost &amp; Found</a></li>
+                    <li><a href="#" class="left-aside-sublink">News</a></li>
+                    <li><a href="#" class="left-aside-sublink">Holidays</a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+</aside>
+
+	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+</body>
+</html>
