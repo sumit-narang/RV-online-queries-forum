@@ -42,5 +42,6 @@ footer #footer-link a:hover,footer #footer-link a:focus,footer #footer-link a:ac
         float: none !important;
         display: block !important;
         text-align: center;
+        padding-top: 2px;
     }
 }
