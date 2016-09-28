@@ -1,9 +1,9 @@
 footer{
 	padding: 15px;
-	background: #0b0b0b;
+	background: #212020;
 }
 footer #copyright{
-	color: #fb5c89;
+	color: #f3769a;
 }
 footer .container-footer{
 	margin-left: auto;
@@ -11,12 +11,16 @@ footer .container-footer{
 }
 footer #footer-link{
     float: right;
-    color: #e5e4e4;
+    color: #b7b5b5;
 }
 footer #footer-link a{
-    color: #e5e4e4;
+    color: #b7b5b5;
     margin-left: 5px;
     margin-right: 5px;
+}
+footer #footer-link a:hover{
+	text-decoration: none;
+    color: white;
 }
 @media(min-width: 1920px){
     footer{
