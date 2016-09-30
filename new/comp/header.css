@@ -240,8 +240,7 @@
 }*/
 /*footer ENDS*/
 /*sidebar starts*/
-.aside-container{
-    /*padding: 0 0;*/
+/*.aside-container{
     margin-top: 70px;
 }
 .aside-container h5{
@@ -251,7 +250,6 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    /*margin-top: 50px;*/
 }
 .tags-sublink{
     display: inline-block;
@@ -261,10 +259,8 @@
     border: 1px solid transparent;
     border-radius: 5px;
     margin-bottom: 5px;
-    /*border-bottom: 1px solid #edeeed;*/
     
     background-color: #f8f9f8;
-    /*border-bottom: 1px solid #f4f6f4;*/
 }
 .glyphicon-chevron-down{
     color: #818283;
@@ -302,7 +298,7 @@
     .aside-container{
         margin-top: 140px;
     }
-}
+}*/
 /*sidebar ENDS*/
 /*main STARTS*/
 .main{
@@ -320,7 +316,7 @@
 .popular-post{
     margin-top: 70px; 
 }
-h5{
+section h5{
     background-color:#878887;
     color: white;
     padding: 10px;
