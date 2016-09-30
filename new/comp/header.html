@@ -14,14 +14,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script type="text/javascript" src="head.js"></script>
 	<!-- tooltip -->
-    
-	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
+    <!-- <script type="text/javascript">
+        
+        document.getElementsByTagName("li").onclick=function(){
+            document.getElementsByTagName("li").style.border = "5px solid steeblue";
+        }
+    </script>
+ -->	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
 	    <div class="container-fluid header-items">
 		    <ul class="nav navbar-nav pull-left">
-		    	<li class="inline-block"><a href="#" class="logo"><b>Q</b>ueans</a></li>
+		    	<li class="inline-block"><a href="#" class="logo"><img src="queans.png"></a><a href="#" class="logo-small"><img src="queans-small.png"></a></li>
 		    </ul>
 		    <ul class="nav navbar-nav pull-right">
 		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Post Question</a></li>
@@ -39,48 +44,102 @@
    <div class="container-fluid">
 		<!-- row STARTS -->   
         <div class="row">
+
             <!-- 1st column STARTS -->
-   		    <div class="col-lg-2 col-md-2 col-sm-3 aside-container hidden-xs">
-   		    	<h5>Tags</h5>
+   		    <div class="col-lg-2 col-md-2 col-sm-3 left-sidebar affix hidden-xs">
+   		    	<h4>SELECT <span>TAGS</span></h4>
 	            <ul class="tags">
-	                <li><a href="#" class="tags-sublink">Hostel</a></li>
-	                <li><a href="#" class="tags-sublink">Sports</a></li>
-	                <li><a href="#" class="tags-sublink">Placements</a></li>
-	                <li><a href="#" class="tags-sublink">Freshers</a></li>
+	                <li><a href="#" class="tags-sub">Hostel <span class="numb">23</span> </a></li>
+	                <li><a href="#" class="tags-sub">Sports <span class="numb">31</span></a></li>
+	                <li><a href="#" class="tags-sub">Placements <span class="numb">11</span></a></li>
+	                <li><a href="#" class="tags-sub">Freshers <span class="numb">73</span></a></li>
+                    <li><a href="#" class="tags-sub">Clubs <span class="numb">8</span></a></li>
 	                <!-- 1st collapse -->
-	                <li><a class="tags-sublink" role="button" data-toggle="collapse" href="#clubs" aria-expanded="false" aria-controls="collapseExample">
-	                    	Clubs<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-	                    </a>
-	                    <div class="collapse" id="clubs">
-	                        <ul class="collapse-dropdown">
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink ">Footprints</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Raag</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Ashwa</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Carv</a></li>
-	                        </ul>
-	                    </div>
-	                </li>
-	                <!-- 2nd collapse -->
-	                <li><a class="tags-sublink " role="button" data-toggle="collapse" href="#departments" aria-expanded="false" aria-controls="collapseExample">
-	                        Departments<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+	                <li><a class="tags-sub" role="button" data-toggle="collapse" href="#departments" aria-expanded="false" aria-controls="collapseExample">
+	                        Departments <span class="numb">123</span> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 	                    </a>
 	                    <div class="collapse" id="departments">
 	                        <ul class="collapse-dropdown">
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Computer Science</a></li>    
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EcE</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">EEE</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Maths</a></li>
-	                            <li><a href="#" class="tags-sublink collapse-dropdown-sublink">Information Tech</a></li>
-	                        </ul>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Aerospace <span class="numb">23</span></a></li>    
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Biotechnology <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Chemical <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Civil <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Computer Science <span class="numb">23</span></a></li>    
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Electrical &amp; Electronics <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Electronics &amp; Communication <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Electronics &amp; Instrumentation <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Industrial Engineering &amp; Management <span class="numb">23</span></a></li>    
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Master of Computer Applications <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Mechanical <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Chemistry <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Physics <span class="numb">23</span></a></li>
+                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Mathematics <span class="numb">23</span></a></li>
+                            </ul>
 	                    </div>
 	                </li>
-	                <li><a href="#" class="tags-sublink">Lost &amp; Found</a></li>
-	                <li><a href="#" class="tags-sublink">News</a></li>
-	                <li><a href="#" class="tags-sublink">Holidays</a></li>
+	                <li><a href="#" class="tags-sub">Lost &amp; Found <span class="numb">15</span></a></li>
+	                <li><a href="#" class="tags-sub">News <span class="numb">174</span></a></li>
+	                <li><a href="#" class="tags-sub">Holidays <span class="numb">89</span></a></li>
 	            </ul>
 	        </div><!-- 1st column ENDS -->
+
+
+            <!-- 3rd column STARTS -->
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs pull-right">
+                <section class="popular-post">
+                    <h5>Popular Posts</h5>
+                    <ul class="common-right-aside">
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="recent-news hidden-sm">
+                    <h5>Recent News</h5>
+                    <ul class="common-right-aside">
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                        <li>
+                            <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
+                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                        </li>
+                    </ul>
+                </section>
+            </div><!-- 3rd column ENDS -->
+
 	        <!-- 2nd column START/ Main STARTS -->
-    		<div class="col-md-7 col-lg-7 col-sm-9 col-xs-12 main">
+    		<div class="col-md-7 col-lg-7 col-sm-9 col-xs-12 main pull-right">
     			<div class="common-date"><strong >13 Sep,2016</strong></div>
     			<section>
     				<div class="ques-info">
@@ -269,59 +328,7 @@
 				  </div>
 				</nav>
 	    	</div><!-- 2nd column ENDS -->
-			<!-- 3rd column STARTS -->
-			<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
-				<section class="popular-post">
-	            	<h5>Popular Posts</h5>
-	            	<ul class="common-right-aside">
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            	</ul>
-	            </section>
-	            <section class="recent-news hidden-sm">
-	            	<h5>Recent News</h5>
-	            	<ul class="common-right-aside">
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            		<li>
-	            			<a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-	            			<div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
-	            		</li>
-	            	</ul>
-	            </section>
-	        </div><!-- 3rd column ENDS -->
+			
 		</div><!-- row END -->
 	</div>
 
