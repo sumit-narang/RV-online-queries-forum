@@ -327,11 +327,11 @@ aside > h5{
 /*logo in header*/
 @media(min-width: 0px){
     .logo img{
-        height: 30px;
+        height: 36px;
     }
     .logo{
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
+        padding-top: 7px !important;
+        padding-bottom: 7px !important;
     }
 }
 
