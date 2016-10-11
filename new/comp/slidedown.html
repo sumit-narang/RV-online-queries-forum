@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title>Header</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="new.css">
+    <style type="text/css">
+        .inline-block a{
+            color: white !important;
+        }
+        .glyphicon-option-vertical{
+            color: white;
+        }
+        @media(max-width: 767px){
+            .website-name{
+                text-align: center !important;
+                display: inline-block !important;
+                margin-left: 48px;
+            }
+            .nav-items{
+                display: none;
+            }
+            .dropdown-icon-sm{
+                display: inline-block !important;
+                font-size: 18px;
+                vertical-align: middle;
+                margin-top: 4px;
+            }
+            .fixed-sm{
+                text-align: center;
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+            }
+        }
+        @media(min-width: 768px){
+            .website-name{
+                float: left;
+            }
+            .nav-items{
+                float: right;
+            }
+            .website-name{
+                float: left;
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container-fluid header-items">
+		    <ul class="nav navbar-nav  fixed-sm">
+		    	<li class="website-name"><a href="#" class="logo"><img src="new-logo.png"></a></li>
+                <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><a href=""><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></a></li>
+		    </ul>
+            
+		    <ul class="nav navbar-nav nav-items dropdown-content-sm">
+		    	<li class="inline-block"><a href="#" class="nav-items">Post Question</a></li>
+		    	<li class="inline-block hidden-sm hidden-md hidden-lg"><a href="#" class="nav-items" data-toggle="modal" data-target="#tags">Tags</a></li>
+		    	<li class="inline-block"><a href="#" class="nav-items">Unanswered</a></li>
+		        <li class="inline-block"><a href="#" class="nav-items">Popular</a></li> 
+		    	<li class="inline-block"><a href="#" class="nav-items">Sign Up</a></li>
+		    	<li class="inline-block"><a href="#" class="active nav-items">Login</a></li>
+        		
+		    </ul>
+	    </div>
+	</nav>
+    
+   <div class="container-fluid" style="height:900px;"></div>
+
+	<footer>
+		<div class="container-footer">
+        <span id="footer-link">
+            <a href="">Terms of Use</a>&nbsp;|
+            <a href="">About</a>&nbsp;|
+            <a href="">Report Bugs</a>&nbsp;|
+            <a href="">Contact</a>
+        </span>
+        <span id="copyright">&copy; Queans. All Rights Reserved</span>
+        </div>
+    </footer>
+
+    
+	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	
+</body>
+</html>
