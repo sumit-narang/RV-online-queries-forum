@@ -21,7 +21,14 @@
                 margin-left: 48px;
             }
             .nav-items{
-                display: none;
+                top: -240px;
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+                transition: top 0.3s ease-in-out;
+                text-align: center;
+            }
+            .nav-items li{
+                top: -50px;
             }
             .dropdown-icon-sm{
                 display: inline-block !important;
@@ -50,15 +57,18 @@
         }
 
         .is-visible{
-            display: block;/*
-            animation: down 1s ease-in-out;*/
+            display: block;
             margin-top: 0px !important;
             margin-bottom: 0px !important;  
-            text-align: center;      
+            text-align: center; 
+            transition: top 0.3s ease-in-out;
+            top: 0px;     
         }
+
         @media(max-width: 767px){
             .navbar-default{
                 background-color: transparent !important;
+                border-color: transparent !important;
             }
             .fixed-sm{
                 background-color: steelblue !important;
@@ -67,48 +77,156 @@
                 z-index: -1;
                 background-color: #6594bb !important;
                 position: relative;
-                top: -100px;
-                animation: down 0.3s ease-in-out;
-                animation-fill-mode: forwards;
+               /* -webkit-animation: down 0.3s ease-in-out forwards;
+                -moz-animation: down 0.3s ease-in-out forwards;
+                -o-animation: down 0.3s ease-in-out forwards;
+                -ms-animation: down 0.3s ease-in-out forwards;
+                animation: down 0.3s ease-in-out forwards; */   
+            }
+           
+            @-webkit-keyframes down{
+                0%{
+                    transform: translate3d(0,-240px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
+            }
+            @-moz-keyframes down{
+                0%{
+                    transform: translate3d(0,-240px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
+            }
+            @-o-keyframes down{
+                0%{
+                    transform: translate3d(0,-240px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
             }
             @keyframes down{
                 0%{
-                    top: -240px;
+                    transform: translate3d(0,-240px,0);
                 }
                 100%{
-                    top: 0px;
+                    transform: translate3d(0,0,0);
                 }
             }
-            /*.nav-items li{
-                top: -30px;
-                animation: down-items 0.3s ease-in-out;
-                animation-fill-mode: forwards;
-            }*/
-            .nav-items li:nth-child(6){
-                animation: down-items 0.3s ease-in-out;
+            
+            @keyframes down{
+                0%{
+                    transform: translate3d(0,-240px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
             }
-            .nav-items li:nth-child(5){
-                animation: down-items 0.3s ease-in-out 0.1s;
+            .is-visible li{
+                top: 0;
             }
-            .nav-items li:nth-child(4){
-                animation: down-items 0.3s ease-in-out 0.15s;
+            .is-visible li:nth-child(6){
+                transition: top 0.3s ease-in-out ;
+                /*-webkit-animation: down-items 0.3s ease-in-out forwards;
+                -moz-animation: down-items 0.3s ease-in-out forwards;
+                -o-animation: down-items 0.3s ease-in-out forwards;
+                -ms-animation: down-items 0.3s ease-in-out forwards;
+                animation: down-items 0.3s ease-in-out forwards;*/
             }
-            .nav-items li:nth-child(3){
-                animation: down-items 0.3s ease-in-out 0.2s;
+            .is-visible li:nth-child(5){
+                transition: top 0.3s ease-in-out 0.1s;
+                /*-webkit-animation: down-items 0.3s ease-in-out 0.1s forwards;
+                -moz-animation: down-items 0.3s ease-in-out 0.1s forwards;
+                -o-animation: down-items 0.3s ease-in-out 0.1s forwards;
+                -ms-animation: down-items 0.3s ease-in-out 0.1s forwards;
+                animation: down-items 0.3s ease-in-out 0.1s forwards;*/
             }
-            .nav-items li:nth-child(2){
-                animation: down-items 0.3s ease-in-out 0.25s;
+            .is-visible li:nth-child(4){
+                transition: top 0.3s ease-in-out 0.15s;
+                /*-webkit-animation: down-items 0.3s ease-in-out 0.15s forwards;
+                -moz-animation: down-items 0.3s ease-in-out 0.15s forwards;
+                -o-animation: down-items 0.3s ease-in-out 0.15s forwards;
+                -ms-animation: down-items 0.3s ease-in-out 0.15s forwards;
+                animation: down-items 0.3s ease-in-out 0.15s forwards;*/
             }
-            .nav-items li:nth-child(1){
-                animation: down-items 0.3s ease-in-out 0.3s;
+            .is-visible li:nth-child(3){
+                transition: top 0.3s ease-in-out 0.2s;
+                /*animation: down-items 0.3s ease-in-out 0.2s forwards;
+                -webkit-animation: down-items 0.3s ease-in-out 0.2s forwards;
+                -moz-animation: down-items 0.3s ease-in-out 0.2s forwards;
+                -ms-animation: down-items 0.3s ease-in-out 0.2s forwards;
+                -o-animation: down-items 0.3s ease-in-out 0.2s forwards;*/
+            }
+            .is-visible li:nth-child(2){
+                transition: top 0.3s ease-in-out 0.25s;
+                /*-webkit-animation: down-items 0.3s ease-in-out 0.25s forwards;
+                -moz-animation: down-items 0.3s ease-in-out 0.25s forwards;
+                -o-animation: down-items 0.3s ease-in-out 0.25s forwards;
+                -ms-animation: down-items 0.3s ease-in-out 0.25s forwards;
+                animation: down-items 0.3s ease-in-out 0.25s forwards;*/
+            }
+            .is-visible li:nth-child(1){
+                transition: top 0.3s ease-in-out 0.3s;
+                /*-webkit-animation: down-items 0.3s ease-in-out 0.3s forwards;
+                -moz-animation: down-items 0.3s ease-in-out 0.3s forwards;
+                -o-animation: down-items 0.3s ease-in-out 0.3s forwards;
+                -ms-animation: down-items 0.3s ease-in-out 0.3s forwards;
+                animation: down-items 0.3s ease-in-out 0.3s forwards;*/
             }
             @keyframes down-items{
                 0%{
-                    top: -50px
+                    transform: translate3d(0,-50px,0);
                 }
                 100%{
-                    top: 0px;
+                    transform: translate3d(0,0,0);
                 }
+            }
+            @-webkit-keyframes down-items{
+                0%{
+                    transform: translate3d(0,-50px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
+            }
+            @-moz-keyframes down-items{
+                0%{
+                    transform: translate3d(0,-50px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
+            }
+            @-o-keyframes down-items{
+                0%{
+                    transform: translate3d(0,-50px,0);
+                }
+                100%{
+                    transform: translate3d(0,0,0);
+                }
+            }
+
+        }
+
+        /*keyframes of IE*/
+        @-ms-keyframes down{
+            0%{
+                transform: translate3d(0,-240px,0);
+            }
+            100%{
+                transform: translate3d(0,0,0);
+            }
+        }
+
+        @-ms-keyframes down-items{
+            0%{
+                transform: translate3d(0,-50px,0);
+            }
+            100%{
+                transform: translate3d(0,0,0);
             }
         }
     </style>
