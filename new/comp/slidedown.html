@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
 	<title>Header</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="header.css"> -->
 	<link rel="stylesheet" type="text/css" href="new.css">
     <style type="text/css">
         .inline-block a{
@@ -13,15 +14,14 @@
         }
         .glyphicon-option-vertical{
             color: #f7f7f7;
+            margin-top: 8px !important;
         }
-        @media(max-width: 767px){
-            
-        }
+       
         @media(min-width: 768px){
             .website-name{
                 float: left;
             }
-            .nav-items{
+            .sub-items{
                 float: right;
             }
             .website-name{
@@ -37,26 +37,27 @@
                 border-color: transparent !important;
             }
             .fixed-sm{
+                position: relative;
                 background-color: steelblue !important;
                 text-align: center;
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;
             }
-            .nav-items{
+            .sub-items{
                 z-index: -1;
+                position: absolute;
+                width: 100%;
                 background-color: #6594bb !important;
-                position: relative;
-                transform: translateY(-240px);
+                transform: translateY(-290px);
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;
                 transition: transform 0.3s ease-in-out;
                 text-align: center;
             }
 
-            .nav-items li{
+            .sub-items li{
                 transform: translateY(-50px);
             }
-
             .website-name{
                 text-align: center !important;
                 display: inline-block !important;
@@ -82,7 +83,6 @@
             .is-visible li{
                 transform: translateY(0px);
             }
-
             .is-visible li:nth-child(6){
                 transition: transform 0.3s ease-in-out;
             }
@@ -101,7 +101,27 @@
             .is-visible li:nth-child(1){
                 transition: transform 0.3s ease-in-out 0.3s;
             }
-          
+            .is-visible li:nth-child(n):after{
+                content: "";
+                display: block;
+                height: 1px;
+                width: 40px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .is-visible li:nth-child(6):after{
+                content: "";
+                display: none !important;
+            }
+            .is-visible li a{
+                font-size: 16px;
+            }
+            .btn-box{
+                border: none !important;
+                background-color: transparent;
+                outline: none;
+            }
         }
     </style>
     <script type = "text/javascript" 
@@ -110,7 +130,7 @@
       <script type = "text/javascript">
          $(document).ready(function() {
             $(".dropdown-icon-sm button").click(function () {
-               $(".nav-items").toggleClass("is-visible");
+               $(".sub-items").toggleClass("is-visible");
             });
          });
       </script>
@@ -123,9 +143,9 @@
                 <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box" onclick="toggleClass()"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
 		    </ul>
             
-		    <ul class="nav navbar-nav nav-items dropdown-content-sm">
+		    <ul class="nav navbar-nav sub-items dropdown-content-sm">
 		    	<li class="inline-block"><a href="#" class="nav-items">Post Question</a></li>
-		    	<li class="inline-block hidden-sm hidden-md hidden-lg"><a href="#" class="nav-items" data-toggle="modal" data-target="#tags">Tags</a></li>
+		    	<li class="inline-block hidden-sm hidden-md hidden-lg"><a href="#" class="nav-items">Tags</a></li>
 		    	<li class="inline-block"><a href="#" class="nav-items">Unanswered</a></li>
 		        <li class="inline-block"><a href="#" class="nav-items">Popular</a></li> 
 		    	<li class="inline-block"><a href="#" class="nav-items">Sign Up</a></li>
