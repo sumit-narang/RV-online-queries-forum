@@ -7,6 +7,7 @@
 	<title>Community Signup</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bootsign.css">
+	<link rel="stylesheet" type="text/css" href="comp/css/header.css">
 	<style type="text/css">
 		.row-main{
 			background: #4a4949;
@@ -77,6 +78,27 @@
 	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
 </head>
 <body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid header-items">
+            <ul class="nav navbar-nav  fixed-sm">
+                <li class="website-name"><a href="#" class="logo"><img src="comp/queans-re-4.png"></a></li>
+                <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
+            </ul>
+            
+            <ul class="nav navbar-nav sub-items dropdown-content-sm">
+                <li class="inline-block"><a href="#" class="nav-items">Post Question</a></li>
+                <li class="inline-block hidden-sm hidden-md hidden-lg"><a href="#" class="nav-items">Tags</a></li>
+                <li class="inline-block"><a href="#" class="nav-items">Unanswered<span class="numb">41</span></a></li>
+                <li class="inline-block"><a href="#" class="nav-items">Popular</a></li> 
+                <li class="inline-block"><a href="../bootsign.html" class="nav-items">Sign Up</a></li>
+                <li class="inline-block"><a href="../bootlogin.html" class="active nav-items">Login</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+
 	<div class="container-fluid">
 	<div class="vertical-alignment-helper">
 		<div class="row row-main">
@@ -90,7 +112,7 @@
 						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><div><img src="3draw/fingerprint1.png" height="150px"></div><!-- <div>Thinking about something</div> -->
 						</div>
 						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"><div>You can only login when your account has been verified</div></div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 third"><div>If you have not registered,<a href="">Signup</a> now</div></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 third"><div>If you have not registered, <a href="">Signup</a> now</div></div>
 					</div>
 				</div>
 
@@ -131,9 +153,9 @@
 		$(window).scroll(function(){
 			var wScroll = $(this).scrollTop();
 			$('.sub-left').css({
-				'transform': 'translate(0px,'+ wScroll/4 +'%)'
+				'transform': 'translate(0px,'+ wScroll/4 +'px)'
 			});
-			console.log(wScroll);
+			/*console.log(wScroll);*/
 		});
 	</script>
 </body>
