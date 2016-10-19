@@ -7,7 +7,7 @@
 	<title>Header</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <!-- <link rel="stylesheet" type="text/css" href="header.css"> -->
-	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
     <style type="text/css">
         .inline-block a{
             color: white !important;
@@ -76,7 +76,7 @@
                 margin-top: 0px !important;
                 margin-bottom: 0px !important;  
                 text-align: center; 
-                transition: transform 0.3s ease-in-out;
+                transition: transform 0.3s cubic-bezier(.17,.67,.8,1.81);
                 transform: translateY(0px);    
             }
 
@@ -96,10 +96,10 @@
                 transition: transform 0.3s ease-in-out 0.2s;
             }
             .is-visible li:nth-child(2){
-                transition: transform 0.3s ease-in-out 0.25s;
+                transition: transform 0.3s ease-in-out 0.22s;
             }
             .is-visible li:nth-child(1){
-                transition: transform 0.3s ease-in-out 0.3s;
+                transition: transform 0.3s ease-in-out 0.25s;
             }
             .is-visible li:nth-child(n):after{
                 content: "";
@@ -140,7 +140,7 @@
 	    <div class="container-fluid header-items">
 		    <ul class="nav navbar-nav  fixed-sm">
 		    	<li class="website-name"><a href="#" class="logo"><img src="new-logo.png"></a></li>
-                <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box" onclick="toggleClass()"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
+                <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
 		    </ul>
             
 		    <ul class="nav navbar-nav sub-items dropdown-content-sm">

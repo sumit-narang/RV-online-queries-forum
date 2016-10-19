@@ -7,9 +7,14 @@
 	<title>Header</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../bootsign.css">
-	<link rel="stylesheet" type="text/css" href="header.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="new.css">
+	<!-- <link rel="stylesheet" type="text/css" href="header.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="new.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/left-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/right-sidebar.css">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script type="text/javascript" src="head.js"></script>
@@ -20,27 +25,56 @@
             document.getElementsByTagName("li").style.border = "5px solid steeblue";
         }
     </script>
- -->	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
+ -->	
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   
+      <script type = "text/javascript">
+         $(document).ready(function() {
+            $(".dropdown-icon-sm button").click(function () {
+               $(".sub-items").toggleClass("is-visible");
+            });
+         });
+    </script>
+ <!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
 	    <div class="container-fluid header-items">
 		    <ul class="nav navbar-nav pull-left">
-		    	<li class="inline-block"><a href="#" class="logo"><img src="new-logo.png"></a><!-- <a href="#" class="logo-small"><img src="logoill2.png" height="30px"></a> --></li>
+		    	<li class="inline-block"><a href="#" class="logo"><img src="queans-re-4.png"></a></li>
 		    </ul>
 		    <ul class="nav navbar-nav pull-right">
 		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Post Question</a></li>
 		    	<li class="inline-block hidden-gteq-768 hidden-gteq-1920"><a href="#" class="nav-items" data-toggle="modal" data-target="#tags">Tags</a></li>
-		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Unanswered</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Unanswered<span class="numb">41</span></a></li>
 		    	<li class="inline-block hidden-gteq-768 hidden-gteq-1920"><a href="#" class="nav-items" data-toggle="modal" data-target="#question">Question</a></li>
 		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Popular</a></li> 
-		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Sign Up</a></li>
-		    	<li class="inline-block hidden-lt-768 hidden-lt-650 hidden-gteq-1920"><a href="#" class="active nav-items">Login</a></li>
+		    	<li class="inline-block hidden-lt-650"><a href="../bootsign.html" class="nav-items">Sign Up</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650 hidden-gteq-1920"><a href="../bootlogin.html" class="active nav-items">Login</a></li>
         		<li class="inline-block hidden-gteq-768"><a href="#" class="active nav-items" data-toggle="modal" data-target="#login">Login</a></li>
 		    </ul>
 	    </div>
-	</nav>
+	</nav> -->
     
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid header-items">
+            <ul class="nav navbar-nav  fixed-sm">
+                <li class="website-name"><a href="#" class="logo"><img src="queans-re-4.png"></a></li>
+                <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
+            </ul>
+            
+            <ul class="nav navbar-nav sub-items dropdown-content-sm">
+                <li class="inline-block"><a href="#" class="nav-items">Post Question</a></li>
+                <li class="inline-block hidden-sm hidden-md hidden-lg"><a href="#" class="nav-items">Tags</a></li>
+                <li class="inline-block"><a href="#" class="nav-items">Unanswered<span class="numb">41</span></a></li>
+                <li class="inline-block"><a href="#" class="nav-items">Popular</a></li> 
+                <li class="inline-block"><a href="../bootsign.html" class="nav-items">Sign Up</a></li>
+                <li class="inline-block"><a href="../bootlogin.html" class="active nav-items">Login</a></li>
+                
+            </ul>
+        </div>
+    </nav>
    <div class="container-fluid">
 		<!-- row STARTS -->   
         <div class="row">
@@ -54,204 +88,132 @@
 	                <li><a href="#" class="tags-sub">Placements <span class="numb">11</span></a></li>
 	                <li><a href="#" class="tags-sub">Freshers <span class="numb">73</span></a></li>
                     <li><a href="#" class="tags-sub">Clubs <span class="numb">8</span></a></li>
-	                <!-- 1st collapse -->
-	                <li><a class="tags-sub" role="button" data-toggle="collapse" href="#departments" aria-expanded="false" aria-controls="collapseExample">
-	                        Departments <span class="numb">123</span> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-	                    </a>
-	                    <div class="collapse" id="departments">
-	                        <ul class="collapse-dropdown">
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Aerospace <span class="numb">23</span></a></li>    
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Biotechnology <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Chemical <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Civil <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Computer Science <span class="numb">23</span></a></li>    
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Electrical &amp; Electronics <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Electronics &amp; Communication <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Electronics &amp; Instrumentation <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Industrial Engineering &amp; Management <span class="numb">23</span></a></li>    
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Master of Computer Applications <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Mechanical <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Chemistry <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Physics <span class="numb">23</span></a></li>
-                                <li><a href="#" class="tags-sub collapse-dropdown-sub">Mathematics <span class="numb">23</span></a></li>
-                            </ul>
-	                    </div>
-	                </li>
-	                <li><a href="#" class="tags-sub">Lost &amp; Found <span class="numb">15</span></a></li>
-	                <li><a href="#" class="tags-sub">News <span class="numb">174</span></a></li>
-	                <li><a href="#" class="tags-sub">Holidays <span class="numb">89</span></a></li>
+                    <li><a href="#" class="tags-sub">Lost &amp; Found <span class="numb">15</span></a></li>
+                    <li><a href="#" class="tags-sub">News <span class="numb">174</span></a></li>
+                    <li><a href="#" class="tags-sub">Holidays <span class="numb">89</span></a></li>
+	                <li><a href="#" class="tags-sub">Departments <span class="numb">123</span></a></li>
+                    <li><a href="#" class="tags-sub">Aerospace <span class="numb">23</span></a></li>    
+                    <li><a href="#" class="tags-sub">Biotechnology <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Chemical <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Civil <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Computer Science <span class="numb">23</span></a></li>    
+                    <li><a href="#" class="tags-sub">Electrical &amp; Electronics <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Electronics &amp; Communication <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Electronics &amp; Instrumentation <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Industrial Engineering &amp; Management <span class="numb">23</span></a></li>    
+                    <li><a href="#" class="tags-sub">Master of Computer Applications <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Mechanical <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Chemistry <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Physics <span class="numb">23</span></a></li>
+                    <li><a href="#" class="tags-sub">Mathematics <span class="numb">23</span></a></li>
 	            </ul>
                 <a href="" id="request-tags">Request TAGS</a>
                  
 	        </div><!-- 1st column ENDS -->
 
             <!-- 2nd column START/ Main STARTS -->
-            <div class="col-md-7 col-lg-7 col-sm-9 col-xs-12 main">
+            <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12 main col-lg-offset-2 col-md-offset-2 col-sm-offset-3">
                 <div class="common-date">13 Sep,2016</div>
+                
                 <section>
+                    <h2 class="ques">Which time-table is being followed on this saturday?</h2>
                     <div class="ques-info">
-                            <span class="user-name">Sumit</span>
-                            <span class="qtime">
-                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                            <span class="qtime-posted">15 Sep,2016 8:25 AM</span>
-                            </span>
+                        <span class="ques-user">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sumit
+                        </span>
+                        <span class="ques-date">
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 13 Oct, 2016
+                        </span>
                     </div>
-                    <article>
-                        <div class="question">
-                                <h4><Strong>When is the fastrack results coming out?</Strong></h4>
-                        </div>
-                        
-                        <div class="answer">
-                            I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
-                        </div>
-                        <div class="post-menu">
-                            <span class="post-menu-upvote">
-                                <a href="">Upvote</a>
-                            </span>
-                            <span class="post-menu-downvote">
-                                <a href="">Downvote</a>
-                            </span>
-                            <span class="post-menu-report">
-                                <a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
-                                Report</a>
-                            </span>
-                            <span class="post-menu-answer">
-                                <a role="button" data-toggle="collapse" href="#write-answer" aria-expanded="false" aria-controls="write-answer">
-                                Answer</a>
-                                <div class="collapse" id="write-answer">
-                                    <div class="well">
-                                        It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
-                                    </div>
-                                </div>
-                            </span>
-                            
-                        
-                        </div>
-                        <div class="tagged-question">
-                            <span class="tag-links">
-                                <a href="">
-                                    Department
-                                </a>
-                                <a href="">
-                                    computer Science
-                                </a>
-                                <a href="">
-                                    Holiday
-                                </a>
-                            </span>
-                        </div>  
-                    </article>
+                    <p class="ans">I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.</p>
+                    <div class="ans-info">
+                        <span class="ans-up"><a href=""><img src="demo3.svg" width="30px"></a> 22</span>|
+                        <span class="ans-down"><a href=""><img src="demo2.svg" width="30px"></a> 4</span>
+                        <span class="ans-write"><a href="">Answer</a></span>
+                        <span class="ans-comment"><a href="">Comment<span class="comment-no">21</span></a></span>
+                        <span class="ans-report"><a href="">Report</a></span>
+                    </div>
+                    <div class="tags-info">
+                        <span class="tag-links">Depatment</span>
+                        <span class="tag-links">Holiday</span>
+                    </div>
                 </section>
-                
+
                 <section>
+                    <h2 class="ques">Which time-table is being followed on this saturday?</h2>
                     <div class="ques-info">
-                            <span class="user-name">Sumit</span>
-                            <span class="qtime">
-                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                            <span class="qtime-posted">15 Sep,2016 8:25 AM</span>
-                            </span>
-                        </div>
-                    <article>
-                        <div class="question">
-                                <h4><Strong>When is the fastrack results coming out?</Strong></h4>
-                        </div>
-                        
-                        <div class="answer">
-                            I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
-                        </div>
-                        <div class="post-menu">
-                            <span class="post-menu-upvote">
-                                <a href="">Upvote</a>
-                            </span>
-                            <span class="post-menu-downvote">
-                                <a href="">Downvote</a>
-                            </span>
-                            <span class="post-menu-report">
-                                <a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
-                                Report</a>
-                            </span>
-                            <span class="post-menu-answer">
-                                <a role="button" data-toggle="collapse" href="#write-answer1" aria-expanded="false" aria-controls="write-answer1">
-                                Answer</a>
-                                <div class="collapse" id="write-answer1">
-                                    <div class="well">
-                                        It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
-                                    </div>
-                                </div>
-                            </span>
-                            
-                        
-                        </div>
-                        <div class="tagged-question">
-                            <span class="tag-links">
-                                <a href="">
-                                    Department
-                                </a>
-                                <a href="">
-                                    computer Science
-                                </a>
-                                <a href="">
-                                    Holiday
-                                </a>
-                            </span>
-                        </div>  
-                    </article>
+                        <span class="ques-user">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sumit
+                        </span>
+                        <span class="ques-date">
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 13 Oct, 2016
+                        </span>
+                    </div>
+                    <p class="ans">I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.</p>
+                    <div class="ans-info">
+                        <span class="ans-up"><a href=""><img src="demo3.svg" width="30px"></a> 22</span>&nbsp;&nbsp;&nbsp;|
+                        <span class="ans-down"><a href=""><img src="demo2.svg" width="30px"></a> 4</span>
+                        <span class="ans-write"><a href="">Answer</a></span>
+                        <span class="ans-comment"><a href="">Comment<span class="comment-no">21</span></a></span>
+                        <span class="ans-report"><a href="">Report</a></span>
+                    </div>
+                    <div class="tags-info">
+                        <span class="tag-links">Depatment</span>
+                        <span class="tag-links">Holiday</span>
+                    </div>
                 </section>
-                
+
+
                 <section>
+                    <h2 class="ques">Which time-table is being followed on this saturday?</h2>
                     <div class="ques-info">
-                            <span class="user-name">Sumit</span>
-                            <span class="qtime">
-                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                            <span class="qtime-posted">15 Sep,2016 8:25 AM</span>
-                            </span>
-                        </div>
-                    <article>
-                        <div class="question">
-                                <h4><Strong>When is the fastrack results coming out?</Strong></h4>
-                        </div>
-                        
-                        <div class="answer">
-                            I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.
-                        </div>
-                        <div class="post-menu">
-                            <span class="post-menu-upvote">
-                                <a href="">Upvote</a>
-                            </span>
-                            <span class="post-menu-downvote">
-                                <a href="">Downvote</a>
-                            </span>
-                            <span class="post-menu-report">
-                                <a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
-                                Report</a>
-                            </span>
-                            <span class="post-menu-answer">
-                                <a role="button" data-toggle="collapse" href="#write-answer2" aria-expanded="false" aria-controls="write-answer2">
-                                Answer</a>
-                                <div class="collapse" id="write-answer2">
-                                    <div class="well">
-                                        It was the month of Ramazan. I was rushing home from college in the evening, just before sunset, as I have the habit of breaking fast with my family. It was young blood back then and I used to ride
-                                    </div>
-                                </div>
-                            </span>
-                            
-                        
-                        </div>
-                        <div class="tagged-question">
-                            <span class="tag-links">
-                                <a href="">
-                                    Department
-                                </a>
-                                <a href="">
-                                    computer Science
-                                </a>
-                                <a href="">
-                                    Holiday
-                                </a>
-                            </span>
-                        </div>  
-                    </article>
+                        <span class="ques-user">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sumit
+                        </span>
+                        <span class="ques-date">
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 13 Oct, 2016
+                        </span>
+                    </div>
+                    <p class="ans">I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.</p>
+                    <div class="ans-info">
+                        <span class="ans-up"><a href=""><img src="demo3.svg" width="30px"></a> 22</span>&nbsp;&nbsp;&nbsp;|
+                        <span class="ans-down"><a href=""><img src="demo2.svg" width="30px"></a> 4</span>
+                        <span class="ans-write"><a href="">Answer</a></span>
+                        <span class="ans-comment"><a href="">Comment<span class="comment-no">21</span></a></span>
+                        <span class="ans-report"><a href="">Report</a></span>
+                    </div>
+                    <div class="tags-info">
+                        <span class="tag-links">Depatment</span>
+                        <span class="tag-links">Holiday</span>
+                    </div>
                 </section>
+
+
+                <section>
+                    <h2 class="ques">Which time-table is being followed on this saturday?</h2>
+                    <div class="ques-info">
+                        <span class="ques-user">
+                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sumit
+                        </span>
+                        <span class="ques-date">
+                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 13 Oct, 2016
+                        </span>
+                    </div>
+                    <p class="ans">I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.</p>
+                    <div class="ans-info">
+                        <span class="ans-up"><a href=""><img src="demo3.svg" width="30px"></a> 22</span>&nbsp;&nbsp;&nbsp;|
+                        <span class="ans-down"><a href=""><img src="demo2.svg" width="30px"></a> 4</span>
+                        <span class="ans-write"><a href="">Answer</a></span>
+                        <span class="ans-comment"><a href="">Comment<span class="comment-no">21</span></a></span>
+                        <span class="ans-report"><a href="">Report</a></span>
+                    </div>
+                    <div class="tags-info">
+                        <span class="tag-links">Depatment</span>
+                        <span class="tag-links">Holiday</span>
+                    </div>
+                </section>
+
+
                 <!-- page navigation links -->
                 <nav aria-label="Page navigation">
                   <div class="center-navigation">
@@ -277,58 +239,59 @@
             </div><!-- 2nd column ENDS -->
 
             <!-- 3rd column STARTS -->
-            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+            <div class="col-lg-3 col-md-3 hidden-sm hidden-xs right">
                 <aside id="popular-post">
-                    <h5>Popular Posts</h5>
+                    <h5>POPULAR Posts</h5>
                     <ul class="right-sidebar">
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                     </ul>
                 </aside>
                 <aside id="recent-news">
-                    <h5>Recent News</h5>
+                    <h5>RECENT News</h5>
                     <ul class="right-sidebar">
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                         <li>
                             <a href="">In February 2006, she performed in Neil Simon's Broadway production of Barefoot in the Park.</a>
-                            <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div>
+                            <!-- <div><span class="user-name">Sumit</span><span class="time">10 Sep 12:21 AM </span></div> -->
                         </li>
                     </ul>
                 </aside>
-            </div><!-- 3rd column ENDS -->
+            </div>
+            <!-- 3rd column ENDS -->
 
 	    </div><!-- row END -->
 	</div>
