@@ -15,8 +15,14 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/left-sidebar.css">
     <link rel="stylesheet" type="text/css" href="css/right-sidebar.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+  
+    <link href="https://fonts.googleapis.com/css?family=Fascinate" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 	<script type="text/javascript" src="head.js"></script>
 	<!-- tooltip -->
     <!-- <script type="text/javascript">
@@ -60,7 +66,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid header-items">
             <ul class="nav navbar-nav  fixed-sm">
-                <li class="website-name"><a href="#" class="logo"><img src="queans-re-4.png"></a></li>
+                <li class="website-name"><a href="#" class="logo">Queans</a></li>
                 <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
             </ul>
             
@@ -119,19 +125,48 @@
                     <h2 class="ques">Which time-table is being followed on this saturday?</h2>
                     <div class="ques-info">
                         <span class="ques-user">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sumit
-                        </span>
+                            <i class="fa fa-user-o" aria-hidden="true"></i> Sumit
+                        </span
                         <span class="ques-date">
                             <span class="glyphicon glyphicon-time" aria-hidden="true"></span> 13 Oct, 2016
                         </span>
                     </div>
-                    <p class="ans">I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.</p>
+                    <div class="ans">
+                        <p>I heard that the results will come out on 15 September but i'm not sure. As of now, nothing has been heard from the administrative block.</p>
+                        <div><a href="">view all<span class="ans-count">15</span> answers</a></div>
+                    </div>
+                    
+                    <div class="other-comments">
+                        <!-- <i class="fa fa-comment" aria-hidden="true"></i> -->
+                        <p class="user-comment">
+                            <span class="user">ravi_kathi</span>
+                            <span class="comment">this is very helpful. Thanks!!</span>
+                        </p>
+                        <p class="user-comment">
+                            <span class="user">suyash_singh_gaur</span>
+                            <span class="comment">I talked to them they said it will come out on 16 sep</span>
+                        </p>
+                        <p class="user-comment">
+                            <span class="user">shreyans_nahata</span>
+                            <span class="comment">Why don't they just confirm the date</span>
+                        </p>
+                        <p class="user-comment">
+                            <span class="user">sumit_narang</span>
+                            <span class="comment">It's 7 sem does it even matter<span>
+                        </p>
+                        <div class="comment-count">
+                            <a href="">View all <span class="ans-no">20 </span>answers</a>
+                        </div>
+                    </div>
                     <div class="ans-info">
-                        <span class="ans-up"><a href=""><img src="demo3.svg" width="30px"></a> 22</span>|
-                        <span class="ans-down"><a href=""><img src="demo2.svg" width="30px"></a> 4</span>
-                        <span class="ans-write"><a href="">Answer</a></span>
-                        <span class="ans-comment"><a href="">Comment<span class="comment-no">21</span></a></span>
-                        <span class="ans-report"><a href="">Report</a></span>
+                        <span class="ans-up"><a href=""><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a> 22</span>|
+                        <span class="ans-down"><a href=""><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a> 4</span>
+                        <span class="ans-write"><a href=""><i class="fa fa-pencil" aria-hidden="true"></i> Answer</a></span>
+                        <span class="ans-comment"><a role="button" data-toggle="collapse" href="#write-comment" aria-expanded="false" aria-controls="write-comment">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i> Comment</a></span>
+
+                        <span class="ans-report"><a href="" data-toggle="tooltip" data-placement="top" title="Ban this Quesion">
+                                <i class="fa fa-ban" aria-hidden="true"></i> Report</a></span>
                     </div>
                     <div class="tags-info">
                         <span class="tag-links">Depatment</span>
@@ -211,6 +246,8 @@
                         <span class="tag-links">Depatment</span>
                         <span class="tag-links">Holiday</span>
                     </div>
+
+                    
                 </section>
 
 
@@ -293,6 +330,32 @@
             </div>
             <!-- 3rd column ENDS -->
 
+
+            <div class="collapse comment-collapse" id="write-comment">
+                <input type="text" name="" placeholder="Enter your comment">
+                <div class="other-answers">
+                        <!-- <i class="fa fa-comment" aria-hidden="true"></i> -->
+                        <p class="user-answer">
+                            <span class="user-comp">ravi_kathi</span>
+                            <span class="answer">this is very helpful. Thanks!!</span>
+                        </p>
+                        <p class="user-answer">
+                            <span class="user">suyash_singh_gaur</span>
+                            <span class="answer">I talked to them they said it will come out on 16 sep</span>
+                        </p>
+                        <p class="user-answer">
+                            <span class="user">shreyans_nahata</span>
+                            <span class="answer">Why don't they just confirm the date</span>
+                        </p>
+                        <p class="user-answer">
+                            <span class="user">sumit_narang</span>
+                            <span class="answer">It's 7 sem does it even matter<span>
+                        </p>
+                        <div class="answer-count">
+                            <a href="">View all <span class="ans-no">20 </span>answers</a>
+                        </div>
+                    </div>
+            </div>
 	    </div><!-- row END -->
 	</div>
 
