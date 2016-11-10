@@ -62,7 +62,7 @@ body {
 
 .ques {
   margin-top: 0px !important;
-  font-size: 25px !important; }
+  font-size: 22px !important; }
 
 .ques-info {
   font-size: 12px; }
@@ -77,6 +77,9 @@ body {
 
 .ans {
   margin-top: 10px; }
+
+.other-comments .user-comment .user {
+  font-weight: bold; }
 
 /* .ans-info{
     margin-top: 15px;
@@ -111,30 +114,46 @@ line-height: 35px; */ }
   margin-left: -15px;
   margin-right: -15px; }
 
-.ans-comment a {
-  background: steelblue;
-  border-radius: 3px;
-  padding: 3px 0px 3px 5px;
-  color: white !important;
-  border: 1px solid steelblue; }
+/* .ans-comment a{
+    background: steelblue;
+    border-radius:3px;
+    padding:3px 0px 3px 5px;
+    color: white !important;
+    border: 1px solid steelblue;
+} */
+/* .ans-comment a:hover{
+    background:#335877;
+    border: 1px solid #335877;
+    text-decoration: none;
+}
+.ans-comment a:hover .comment-no{
+    border:1px solid #335877;
+} */
+/* .comment-no{
+    display: inline-block;
+    background:white;
+    padding:3px 10px;
+    border: 1px solid steelblue;
+    border-radius:0px 3px 3px 0px;
+    color: black;
+    position:relative;
+    left: 5px;
+} */
+.comment-collapse {
+  width: 100%;
+  background: steelblue; }
 
-.ans-comment a:hover {
-  background: #335877;
-  border: 1px solid #335877;
-  text-decoration: none; }
+.collapse {
+  position: fixed !important;
+  bottom: 0; }
 
-.ans-comment a:hover .comment-no {
-  border: 1px solid #335877; }
+.collapsing {
+  position: fixed;
+  bottom: 0px; }
 
-.comment-no {
-  display: inline-block;
-  background: white;
-  padding: 3px 10px;
-  border: 1px solid steelblue;
-  border-radius: 0px 3px 3px 0px;
-  color: black;
-  position: relative;
-  left: 5px; }
+.collapse .in {
+  position: fixed !important;
+  bottom: 0; }
 
 .center-navigation {
   text-align: center;

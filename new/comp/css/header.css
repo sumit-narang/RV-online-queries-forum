@@ -30,8 +30,10 @@
   color: #20bd99 !important; }
 
 .logo {
-  color: white !important;
-  font-size: 20px; }
+  font-family: 'Fascinate Inline', cursive;
+  color: steelblue !important;
+  font-size: 30px;
+  font-weight: 550; }
 
 .nav-items .numb {
   background: #ee5f73 !important;
@@ -69,11 +71,14 @@
 
   .fixed-sm {
     position: relative;
-    background-color: white !important;
+    background-color: #3a89b5 !important;
     text-align: center;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     border-bottom: 1px solid #e6e3e3; }
+
+  .logo {
+    color: white !important; }
 
   .sub-items {
     z-index: -1;
@@ -340,9 +345,10 @@
   .logo img {
     height: 36px; }
 
-  .logo {
-    padding-top: 7px !important;
-    padding-bottom: 7px !important; } }
+  /* .logo{
+      padding-top: 7px !important;
+      padding-bottom: 7px !important;
+  } */ }
 @media (min-width: 1920px) {
   .logo {
     padding-top: 10px !important;
