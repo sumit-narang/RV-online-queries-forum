@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title>Header</title>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootsign.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/left-sidebarnew.css">
+    <link rel="stylesheet" type="text/css" href="css/right-sidebar.css">
+    <link rel="stylesheet" type="text/css" href="css/headernew.css">
+    <link rel="stylesheet" type="text/css" href="css/mainnew.css">
+    <link rel="stylesheet" type="text/css" href="css/post-question.css">
+    
+    
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+        .gradient{
+            margin-top: 11vh !important;
+        }
+    </style>
+	
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   
+      <script type = "text/javascript">
+         $(document).ready(function() {
+            $("#drop-btn").click(function () {
+               $(".nav-items").toggleClass("is-visible");
+            });
+         });
+
+         $(document).ready(function() {
+            $(".tag-btn").click(function () {
+                $(".left-sidebar").toggleClass("is-visible-left-sidebar");
+                $(".nav-items").toggleClass("is-visible");
+            });
+         });
+
+        $(document).ready(function() {
+            $(".close-tag").click(function () {
+                $(".left-sidebar").toggleClass("is-visible-left-sidebar");
+            });
+        });
+
+        $(document).ready(function() {
+            $(".tags a").click(function () {
+                $(".left-sidebar").toggleClass("is-visible-left-sidebar");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#request-tags").click(function () {
+                $(".request-box").toggleClass("hidden-request-box");
+            });
+        });
+    </script>
+ <!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
+</head>
+<body>
+    <header>
+        <div ng-controller= "AccountController as account" class="navbar-top-fixed">
+            <div id="logo">
+                <a href="index.html">RV<span>Que-Ans</span></a>
+            </div>
+            <div class="nav-items">
+                <a href="post-question.html">Post Question</a>
+                <a href="javascript:void(0)" class="hidden-lg hidden-md hidden-sm tag-btn">Tags</a>
+                <a href="">Unanswered <span class="unans-no">41</span></a>
+                <a href="">Popular</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="#">Login</a>
+            </div>
+            <div id="drop-btn" class="hidden-lg hidden-md hidden-sm">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="vertical-alignment-helper"><!-- vertical align -->
+            <div class="vertical-align-center">
+                <div class="gradient col-lg-4 col-md-4 col-sm-6 col-xs-10 col-lg-offset-4 col-md-offset-4  col-sm-offset-3  col-xs-offset-1"><!-- Modal content-->
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <div class="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+                        <!--starting form-->
+                        <form>
+
+                            <!--Email-->
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+
+                            <!--Password-->
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Password">
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" class="btn btn-default btn-custom">Login</button>
+                        </form>
+                    </div><!--inner padding form-->
+                    <div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+                    <div class="login-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        Don't have an account <a href="#">Sign Up</a>
+                        <br><a href="#">Forgot Password ?</a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+    
+
+    <script type="text/javascript" src="jquer-1.9.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+.post-ans-container{
+	width: 100%;
+	height: 240px;
+	border: 1px solid #a5a2a2;
+}
+
+.post-ans-nav{
+	height: 40px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #a5a2a2;
+	padding-bottom: 10px;
+}
+
+.post-ans-nav > span{
+	display: inline-block;
+	width: 40px;
+	height: 39px;
+	line-height: 39px;
+	text-align: center;
+}
+
+.post-ans-nav > span:hover{
+	cursor: pointer;
+}
+
+.post-ans-nav > span i{
+	color: #272626;
+}
+
+.post-ans-nav > span:hover i{
+	color: red;
+}
+
+.post-ans-body{
+	height: 198px;
+}
+
+.post-ans-body textarea{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: none;
+	padding: 5px;
+	resize: none;
+}
+
+.post-ans-btn{
+	margin-top: 10px;
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	background: #676666;
+	color: white;
+}
+
+.post-ans-btn:hover{
+	background: #4e4e4e;
+}
+/*post as anonymous*/
+.anonymous label{
+	font-weight: normal;
+}
+
+/*preview answer*/
+.preview > div:nth-child(1){
+	margin-top: 15px;
+	border-top: 1px dashed #737070;
+}
+.preview > div:nth-child(2){
+	margin-top: 10px;
+	border-top: 1px dashed #737070;
+}
+.preview > div:nth-child(4){
+	border-top: 1px dashed #737070;
+}
+.preview > div:nth-child(5){
+	margin-top: 10px;
+	border-top: 1px dashed #737070;
+}
