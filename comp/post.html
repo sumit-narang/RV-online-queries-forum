@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title>Header</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootsign.css">
+	<link rel="stylesheet" type="text/css" href="header.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/javascript" src="head.js"></script>
+	<!-- tooltip -->
+    <style type="text/css">
+        footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .middle{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .ques{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        .from-top{
+            margin-top: 50px;
+        }
+        
+        .post-btn{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .sub-list li{
+            list-style-type: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function calc()
+        {
+            var checkedValue = null; 
+            var inputElements = document.getElementsByClassName('tagged');
+            for(var i=0; inputElements[i]; ++i){
+                if(inputElements[i].checked){
+                    checkedValue = inputElements[i].value;
+                    document.getElementById('empty-tag').innerHTML=checkedValue +"&nbsp;";
+                    break;
+                }
+                else if(inputElements[i].unchecked){
+                    checkedValue = null;
+                    document.getElementById('empty-tag').innerHTML=checkedValue +"&nbsp;";
+                    break;
+                }
+            }
+            
+        }
+    </script>
+	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+	    <div class="container-fluid header-items">
+		    <ul class="nav navbar-nav pull-left">
+		    	<li class="inline-block"><a href="#" class="logo"><b>Q</b>ueans</a></li>
+		    </ul>
+		    <ul class="nav navbar-nav pull-right">
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="post.html" class="nav-items">Post Question</a></li>
+		    	<li class="inline-block hidden-gteq-768 hidden-gteq-1920"><a href="#" class="nav-items" data-toggle="modal" data-target="#tags">Tags</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650"><a href="#" class="nav-items">Unanswered</a></li>
+		    	<li class="inline-block hidden-gteq-768 hidden-gteq-1920"><a href="#" class="nav-items" data-toggle="modal" data-target="#question">Question</a></li>
+		    	<li class="inline-block hidden-lt-650"><a href="popular.html" class="nav-items">Popular</a></li> 
+		    	<li class="inline-block hidden-lt-650"><a href="#" class="nav-items">Sign Up</a></li>
+		    	<li class="inline-block hidden-lt-768 hidden-lt-650 hidden-gteq-1920"><a href="#" class="active nav-items">Login</a></li>
+        		<li class="inline-block hidden-gteq-768"><a href="#" class="active nav-items" data-toggle="modal" data-target="#login">Login</a></li>
+		    </ul>
+	    </div>
+	</nav>
+    
+    <div class="container-fluid question-post">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-3 from-top">
+                <h5>Select Tags</h5>
+                <ul class="tags">
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Hostel">Hostel</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Sports">Sposts</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Placement">Placements</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Freshers">Freshers</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Clubs">Clubs</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Departments">Departments</label></div></li>
+            
+                    <ul class="sub-list">
+                        <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="CSE">CSE</label></div></li>
+                        <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="EEE">EEE</label></div></li>
+                        <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="ECE">ECE</label></div></li>
+                        <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Maths">Maths</label></div></li>
+                        <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="ISC">ISC</label></div></li>
+                       
+                    </ul>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Lost &amp; Found">Lost &amp; Found</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="News">News</label></div></li>
+                    <li><div class="checkbox"><label><input type="checkbox" name="" class="tagged" onclick="calc()" value="Holidays">Holidays</label></div></li>
+                    
+                </ul>
+            
+            <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> -->
+                <div class="middle">
+                    <div class="post-answer">
+                        <div class="post-answer-link">
+                            <span class="checkbox"><label><input type="checkbox">Anonymous</label></span>
+                        </div>
+                        <input type="text" name="title" class="ques" placeholder="Question Title">
+                        <div id="empty-tag"></div>
+                        <button class="btn btn-primary post-btn">Post</button>
+                    </div>
+                </div>
+            <!-- </div> -->
+            </div><!-- end of 1st col -->
+        </div>
+    </div>
+	<footer>
+		<div class="container-fluid">
+        <span id="footer-link">
+            <a href="">Terms of Use</a>&nbsp;|
+            <a href="">About</a>&nbsp;|
+            <a href="">Report Bugs</a>&nbsp;|
+            <a href="">Contact</a>
+        </span>
+        <span id="copyright">&copy; Queans. All Rights Reserved</span>
+        </div>
+    </footer>
+
+    
+   
+
+    
+
+
+    
+	<script type="text/javascript" src="../jquer-1.9.1.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    		$('[data-toggle="tooltip"]').tooltip();
+		});	
+	</script>
+</body>
+</html>

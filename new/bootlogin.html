@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title>Community Signup</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootsign.css">
+	<link rel="stylesheet" type="text/css" href="comp/css/header.css">
+	<style type="text/css">
+		.row-main{
+			background: #4a4949;
+			display: block;
+		}
+		.gradient1{
+			background:#2d2c2c;
+		}
+		form{
+			margin-top: 100px;
+			margin-bottom: 50px;
+		}
+		.sub-left{
+			color: #cecccc;
+			font-size: 16px;
+			margin-top: 40px;
+		}
+		.sub-left{
+			padding: 10px;	
+		}
+		.intro-heading{
+			padding-top: 20px;
+			color: #cecccc;
+			text-align: center;
+		}
+		.intro-heading:after{
+			content:"";
+			display: block;
+			width: 60px;
+			height: 2px;
+			margin-left:auto;
+			margin-right: auto;
+			margin-top: 10px;
+			background: #cecccc;
+		}
+		.top-parallax{
+			margin-top: 50px;
+			background: #686868;
+			background-attachment: fixed;
+		}
+		/*for login*/
+		.third{
+			margin-top: 50px;
+		}
+		.sub-left:last-child a{
+			color: white;
+		}
+		/*using table*/
+		.vertical-alignment-helper {
+		    display:table;
+		    height: 100%;
+		    width: 100%;
+		    pointer-events:none;
+		}
+		.vertical-align-center {
+		    /* To center vertically */
+		    display: table-cell;
+		    vertical-align: middle;
+		    pointer-events:none;
+		}
+		@media(max-width: 768px){
+			.col-1{
+				padding:0px !important;
+			}
+		}
+	</style>
+	
+	<!--[if lt IE9]><script type="text/javascript"></script><![endif]-->
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid header-items">
+            <ul class="nav navbar-nav  fixed-sm">
+                <li class="website-name"><a href="#" class="logo"><img src="comp/queans-re-4.png"></a></li>
+                <li class="pull-right hidden-sm hidden-md hidden-lg dropdown-icon-sm"><button class="btn-box"><span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span></button></li>
+            </ul>
+            
+            <ul class="nav navbar-nav sub-items dropdown-content-sm">
+                <li class="inline-block"><a href="#" class="nav-items">Post Question</a></li>
+                <li class="inline-block hidden-sm hidden-md hidden-lg"><a href="#" class="nav-items">Tags</a></li>
+                <li class="inline-block"><a href="#" class="nav-items">Unanswered<span class="numb">41</span></a></li>
+                <li class="inline-block"><a href="#" class="nav-items">Popular</a></li> 
+                <li class="inline-block"><a href="../bootsign.html" class="nav-items">Sign Up</a></li>
+                <li class="inline-block"><a href="../bootlogin.html" class="active nav-items">Login</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+
+	<div class="container-fluid">
+	<div class="vertical-alignment-helper">
+		<div class="row row-main">
+
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-3 col-1">
+
+				<div class="vertical-align-center">
+				<div class="top-parallax">
+					<h2 class="intro-heading">Login</h2>
+					<div class="row sub-left">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><div><img src="3draw/fingerprint1.png" height="150px"></div><!-- <div>Thinking about something</div> -->
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"><div>You can only login when your account has been verified</div></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 third"><div>If you have not registered, <a href="">Signup</a> now</div></div>
+					</div>
+				</div>
+
+				<div class="gradient1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
+
+				    <!--starting form-->
+					<form>
+
+						    <!--Email-->
+						    <div class="form-group">
+	    						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  						</div>
+
+						    <!--Password-->
+						    <div class="form-group">
+	    						<input type="password" class="form-control" id="exampleInputEmail1" placeholder="Password">
+	  						</div>
+
+							<!--submit button-->
+						    <button type="submit" class="btn btn-default btn-custom">Login</button>
+						</form>
+					</div><!--inner padding form-->
+					<!-- <div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div> -->
+					<div class="login-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						Don't have an account <a href="#">Sign Up</a>
+						<br><a href="#">Forgot Password ?</a>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquer-1.9.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var wScroll = $(this).scrollTop();
+			$('.sub-left').css({
+				'transform': 'translate(0px,'+ wScroll/4 +'px)'
+			});
+			/*console.log(wScroll);*/
+		});
+	</script>
+</body>
+</html>

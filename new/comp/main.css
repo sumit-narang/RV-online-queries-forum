@@ -1,0 +1,227 @@
+.top-main-template{
+	background-color:rgba(240,241,251,0.5);
+	border: 1px solid transparent;
+	border-radius:5px 5px 0 0;
+	height: 50px;
+	
+}
+.top-main-template img{
+	margin-top: 5px;
+	
+	padding-left: 5px;
+}
+.bottom-main-template{
+	background-color:rgba(245,246,247,0.4);
+	border: 1px solid transparent;
+	border-radius:0 0 5px 5px;
+}
+/*.common-date{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.common-date:before,
+.common-date:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 10%;
+}
+.common-date:before {
+ right: 1.5em;
+}
+.common-date:after {
+ left: 1.5em;
+}
+*/
+.question h4{
+	margin-bottom: 0;
+}
+.ques-info{
+	color: #848d95;
+}
+.glyphicon-time{
+	float: none;
+	font-size: 12px;
+	padding-left: 15px;
+}
+.qtime-posted{
+	font-size: 12px;
+}
+.answer{
+	margin-top: 10px;
+}
+@media(min-width: 992px){
+	.main{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.post-menu{
+	margin-top: 15px;
+
+}
+.post-menu-upvote a,.post-menu-downvote a,.post-menu-answer a,.post-menu-report a{
+	border: 1px solid #459fed;
+	padding: 3px 5px;
+	border-radius: 5px;
+	background-color: #459fed;
+	color: white;
+	font-size: 13px;
+}
+@media(max-width:330px){
+	.post-menu-answer a{
+		position: relative;
+		top: 10px;
+	}
+}
+.post-menu-answer  .collapsing{
+	position: relative;
+	top: 20px;
+}
+.post-menu-answer  .collapse{
+	position: relative;
+	top: 20px;
+	margin-bottom: 20px;
+}
+.post-menu-answer  .collapse .in{
+	position: relative;
+	
+	bottom: 20px;
+}
+/*.tagged-question{
+	background-color: none !important;
+	padding-left: 30px;
+	padding-right: 30px;
+}*/
+.tagged-question{
+	padding-top: 20px;
+}
+/*.tag-links {
+	font-weight: 700px;
+	margin: 2px 4px 2px 10px;
+	padding: 3px 7px;
+	text-transform: uppercase;
+	background-color: steelblue;
+	color: white;
+	line-height: 1.2727272727;
+	position: relative;
+	border-radius: 0 2px 2px 0;
+	font-size: 11px;
+}
+.tag-links:before{
+
+	border-top: 10px solid transparent;
+    border-right: 8px solid #767676;
+    border-right: 8px solid steelblue;
+    border-bottom: 10px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 0;
+}
+.tag-links:after{
+	background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: 4px;
+}*/
+/*.tag-links a{
+	background-color: #767676;
+	background-color: #459fed;
+    border-radius: 0 2px 2px 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.2727272727;
+    margin: 2px 4px 2px 10px;
+    padding: 3px 7px;
+    position: relative;
+    text-transform: uppercase;
+}
+.tag-links a:before{
+
+	border-top: 10px solid transparent;
+    border-right: 8px solid #767676;
+    border-right: 8px solid #459fed;
+    border-bottom: 10px solid transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 0;
+}
+.tag-links a:after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 4px;
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    width: 4px;
+}*/
+
+/*section{
+	background-color: #f7f9f7;
+}*/
+/*.common-right-aside li{
+
+    padding: 7px 10px;
+    color: #333;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #f8f9f8;
+    
+}
+.common-right-aside li div{
+	color: #949594;
+}
+.common-right-aside li a{
+	color: black;
+}
+.common-right-aside li a:hover{
+	color: #1b8ff4;
+}*/
+/*.main section article{
+	background-color: #f8f9f8;
+	padding: 20px;
+	
+}
+.main section{
+	border: 1px solid #eaebeb;
+	border-radius: 5px 5px 0 0;
+	padding-top: 10px;
+	margin-bottom: 30px;
+	
+  -webkit-box-shadow: 0 6px 6px -6px #c1c3c1;
+     -moz-box-shadow: 0 6px 6px -6px #c1c3c1;
+          box-shadow: 0 6px 6px -6px #c1c3c1;
+
+}*/
+/*.ques-info{
+	font-size: 13px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.qtime{
+	float: right;
+	padding-right: 20px;
+}*/
+/*page navigation*/
+
+
+
+
